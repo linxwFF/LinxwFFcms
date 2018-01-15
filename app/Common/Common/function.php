@@ -2,9 +2,6 @@
 
 /*
  * 系统函数库
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/3/7
  */
 
 /*
@@ -18,7 +15,7 @@
 function cache($name, $value = '', $options) {
     static $cache = '';
     if (!empty($cache)) {
-        
+
     }
 }
 
@@ -33,7 +30,7 @@ function randString($len = 6) {
         "3", "4", "5", "6", "7", "8", "9"
     );
     $charsLen = count($chars) - 1;
-    // 将数组打乱 
+    // 将数组打乱
     shuffle($chars);
     $output = "";
     for ($i = 0; $i < $len; $i++) {
@@ -94,7 +91,7 @@ function field_info($key, $fun) {
             $str = '<?php ';
             $str .= 'echo ' . $return . ';';
             $str .= ' ?>';
-        }  
+        }
     }
     return $str;
 }

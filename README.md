@@ -1,4 +1,4 @@
-思科cms后台内容管理系统结构说明
+系统结构说明
 
 1.使用thinkphp3.2.3版本作为PHP框架
 
@@ -50,13 +50,6 @@
 本地部署
 
 http://localhost/sikcms/install.php 进入安装
-
-
-若有疑问加QQ群：498476759
-
-邮箱：1114526565@qq.com
-
-
 
 
 # LinxwFFcms

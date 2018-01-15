@@ -1,10 +1,7 @@
-<?php 
+<?php
 /*
- * 
- * 思科cms前台框架主入口
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/3/7
+ *
+ * 前台框架主入口
  * 
  */
 //调试模式

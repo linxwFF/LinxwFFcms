@@ -28,7 +28,7 @@
                   <label class="wizard-step">3</label>
                   <span class="wizard-description">
                     参数配置
-                  </span>                   
+                  </span>
                 </a>
             </li>
             <li>
@@ -36,7 +36,7 @@
                   <label class="wizard-step">4</label>
                   <span class="wizard-description">
                      安装进行
-                  </span>                   
+                  </span>
                 </a>
             </li>
                <li>
@@ -44,17 +44,17 @@
                   <label class="wizard-step">5</label>
                   <span class="wizard-description">
                      完成安装
-                  </span>                   
+                  </span>
                 </a>
             </li>
           </ul>
          </div>
      </div>
 
- 
+
  <div class="example-box">
     <div class="example-code clearfix">
-        <div class='row col-md-12 '> 
+        <div class='row col-md-12 '>
         <form class="form-bordered" id="J_install_form" action="{:U('step4')}" method="post">
             <div class='form-row'>
                 <div class="form-input col-md-10">
@@ -68,11 +68,11 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                    <input type="text" id="dbhost" class="input" name="dbhost" value="127.0.0.1"/> 
+                    <input type="text" id="dbhost" class="input" name="dbhost" value="127.0.0.1"/>
                     <ul id="J_install_tip_dbhost" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;">数据库服务器地址，一般为127.0.0.1</li>
                     </ul>
-                   
+
                 </div>
             </div>
             <div class="form-row">
@@ -97,7 +97,7 @@
                 <div class="form-input col-md-10">
                     <input type="text" name="dbuser" id="dbuser" class="input" value="root" >
                      <ul id="J_install_tip_dbuser" class="parsley-error-list" style="display: block;">
-                      <li class="required" style="display: list-item;"></li>
+                      <li class="required" style="display: list-item;">一般为root</li>
                     </ul>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 <div class="form-input col-md-10">
                    <input type="password" name="dbpwd" id="dbpwd" class="input" autoComplete="off" onblur="condb()" />
                     <ul id="J_install_tip_dbpwd" class="parsley-error-list" style="display: block;">
-                      <li class="required" style="display: list-item;"></li>
+                      <li class="required" style="display: list-item;">一般为空</li>
                     </ul>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                 <input type="text" name="dbname" id="dbname" class="input"/> 
+                 <input type="text" name="dbname" id="dbname" class="input" value="LinxwFFcms"/>
                  <ul id="J_install_tip_dbname" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;"></li>
                     </ul>
@@ -134,9 +134,9 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                   <input type="text" name="dbprefix" id="dbprefix" class="input" value="chou_"/> 
+                   <input type="text" name="dbprefix" id="dbprefix" class="input" value="Lin_"/>
                      <ul id="J_install_tip_dbprefix" class="parsley-error-list" style="display: block;">
-                      <li class="required" style="display: list-item;">建议使用默认，同一数据库安装多个Sikcms时需修改</li>
+                      <li class="required" style="display: list-item;">建议使用默认</li>
                     </ul>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                  <input type="text" id="siteurl" class="input" name="siteurl" value="{$parse_url.path}"/> 
+                  <input type="text" id="siteurl" class="input" name="siteurl" value="{$parse_url.path}"/>
                    <ul id="J_install_tip_siteurl" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;">请以“/”结尾</li>
                     </ul>
@@ -178,7 +178,7 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                 <input type="text" id="sitekeywords" class="input" name="sitekeywords" value=""/>
+                 <input type="text" id="sitekeywords" class="input" name="sitekeywords" value="/企业网站后台管理/"/>
                   <ul id="J_install_tip_sitekeywords" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;">请以“/”结尾</li>
                     </ul>
@@ -191,8 +191,8 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                  <input type="text" id="siteinfo" class="input" name="siteinfo" value="Sikcms后台管理系统,是一款完全开源免费的PHP+MYSQL系统.核心采用了Thinkphp框架等众多开源软件,同时核心功能也作为开源软件发布"/>
-                  
+                  <input type="text" id="siteinfo" class="input" name="siteinfo" value="企业网站后台管理系统,是一款PHP+MYSQL系统.核心采用了Thinkphp框架等众多开源软件"/>
+
                    <ul id="J_install_tip_siteinfo" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;"></li>
                     </ul>
@@ -202,7 +202,7 @@
                 <div class="form-input col-md-10">
                             <h4 class=''>管理员信息</h4>
                 </div>
-            </div> 
+            </div>
                <div class="form-row ">
                 <div class="form-label col-md-2">
                     <label for="">
@@ -210,7 +210,7 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                <input type="text" class="input" name="manager" value="admin"/> 
+                <input type="text" class="input" name="manager" value="admin"/>
                 <ul id="J_install_tip_admin" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;"></li>
                     </ul>
@@ -223,7 +223,7 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-               <input type="text" class="input" id="J_manager_pwd" name="manager_pwd" autoComplete="off" />
+               <input type="text" class="input" id="J_manager_pwd" name="manager_pwd" autoComplete="off" value="admin" />
                 <ul id="J_install_tip_manager_pwd" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;"></li>
                     </ul>
@@ -236,7 +236,7 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                <input type="text" class="input" name="manager_ckpwd" autoComplete="off" /> 
+                <input type="text" class="input" name="manager_ckpwd" autoComplete="off" value="admin" />
                   <ul id="J_install_tip_manager_ckpwd" class="parsley-error-list" style="display: block;">
                       <li class="required" style="display: list-item;"></li>
                     </ul>
@@ -249,13 +249,13 @@
                     </label>
                 </div>
                 <div class="form-input col-md-10">
-                <input type="text" class="input" name="manager_email" /> 
+                <input type="text" class="input" name="manager_email" value="admin@qq.com" />
                 </div>
             </div>
              <div class="form-row">
                       <div class="form-input col-md-11">
                           <div class='form-checkbox-radio col-md-10'>
-                             <input name="testdata" value="1" alt="测试数据需要安装在根目录下才可以完整体验-__,-!" title="测试数据需要安装在根目录下才可以完整体验-__,-!" type="checkbox">
+                             <input name="testdata" checked="checked" value="1" alt="测试数据需要安装在根目录下才可以完整体验-__,-!" title="测试数据需要安装在根目录下才可以完整体验-__,-!" type="checkbox">
                               <label for="">默认测试数据</label>
                           </div>
                       </div>
@@ -272,12 +272,12 @@
 
                                </div>
                        </div>
-              
+
         </form>
 
     </div>
-       
-</div> 
+
+</div>
 </div>
 
 
@@ -318,7 +318,7 @@
           dbuser:'',
           dbpwd:'',
           dbname:'',
-          dbprefix:'建议使用默认，同一数据库安装多个时需修改',
+          dbprefix:'建议使用默认',
           manager:'创始人帐号，拥有站点后台所有管理权限',
           manager_pwd:'',
           manager_ckpwd:'',
@@ -353,9 +353,6 @@
                 required:true
             },
             dbuser:{
-                required:true
-            },
-            dbpwd:{
                 required:true
             },
             dbname:{
@@ -406,9 +403,6 @@
             },
             dbuser: {
                 required	: '数据库用户名不能为空'
-            },
-            dbpwd: {
-                required	: '数据库密码不能为空'
             },
             dbname: {
                 required	: '数据库名不能为空'

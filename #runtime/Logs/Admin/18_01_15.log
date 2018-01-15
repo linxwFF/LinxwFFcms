@@ -1,0 +1,104 @@
+[ 2018-01-15T21:25:25+08:00 ] 127.0.0.1 /LinxwFFcms/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:25:25+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-15T21:25:30+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Public&a=doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-15T21:25:30+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:25:30+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=main&menuid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-15T21:25:31+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=version&version=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: menuid G:\wamp64\www\LinxwFFcms\app\Common\Controller\AdminBase.class.php 第 65 行.
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 0 AND `status` = 1 ORDER BY sort asc LIMIT 1000   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 0 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 50 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 51 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 55 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 52 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 63 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 56 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 57 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 42 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 43 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 44 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 45 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 2 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 12 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 13 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 8 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 9 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 4 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 5 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 47 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 49 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 48 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 1 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 20 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 64 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 21 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 3 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 18 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 19 AND `status` = 1 ORDER BY `sort` asc,`id` desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_menu` WHERE `controller` = 'Index' AND `action` = 'version' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:25:35+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Articles&a=index&menuid=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-15T21:25:36+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Module&a=index&menuid=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:25:38+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Articles&a=index&menuid=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:25:39+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Module&a=index&menuid=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:25:40+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Articles&a=index&menuid=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-15T21:43:53+08:00 ] 127.0.0.1 /LinxwFFcms/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T21:43:53+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

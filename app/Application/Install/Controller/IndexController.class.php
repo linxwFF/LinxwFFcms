@@ -1,10 +1,7 @@
 <?php
 
 /*
- * 快乐筹cms
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/3/11
+ * LinxwFFcms
  *
  */
 
@@ -25,6 +22,8 @@ class IndexController extends Controller {
         if (is_file(MODULE_PATH . 'install.lock')) {
             exit('你已安装过该系统，如需再次安装请删除' . MODEL_PATH . '站点下的install.lock文件');
         }
+        //根据配置文件，/app/Common/Conf/version.inc.php
+        //网站标题和网站的版本号码
         $this->assign('Title', C('SYSTEM_NAME'))
                 ->assign('Version', C('SIKCMS_VERSION'));
     }
@@ -110,7 +109,7 @@ class IndexController extends Controller {
 
     //第三步
     public function step3() {
-  
+
         //地址
         $scriptName = !empty($_SERVER["REQUEST_URI"]) ? $scriptName = $_SERVER["REQUEST_URI"] : $scriptName = $_SERVER['PHP_SELF'];
         $rootpath = @preg_replace("/\/(I|i)nstall\/index\.php(.*)$/", "/", $scriptName);
@@ -120,6 +119,7 @@ class IndexController extends Controller {
             $domain .=":" . $_SERVER['SERVER_PORT'];
         }
         $domain = $sysPort . $domain . $rootpath;
+        //网站域名
         $parse_url = parse_url($domain);
         $parse_url['path'] = str_replace('install.php', '', $parse_url['path']);
         $this->assign('parse_url', $parse_url);
@@ -136,9 +136,12 @@ class IndexController extends Controller {
 
     //安装完成
     public function step5() {
+        //删除缓存文件
         @unlink(RUNTIME_PATH . APP_MODE . '~runtime.php');
+        //生成安装文件的标识
         @touch(MODULE_PATH . 'install.lock');
         $this->assign('step','step5');
+        //跳转到首页
         $this->display('index');
     }
 
@@ -195,10 +198,10 @@ class IndexController extends Controller {
             mysql_select_db($dbName, $conn);
         }
         //读取数据文件
-        $sqldata = file_get_contents(MODULE_PATH . 'Data/sikcms.sql');
+        $sqldata = file_get_contents(MODULE_PATH . 'Data/LinxwFFcms.sql');
         //读取测试数据
         if ($testdata) {
-            $sqldataDemo = file_get_contents(MODULE_PATH . 'Data/sikcms_demo.sql');
+            $sqldataDemo = file_get_contents(MODULE_PATH . 'Data/demo.sql');
             $sqldata = $sqldata . "\r\n" . $sqldataDemo;
         } else {
             //不加测试数据的时候，删除d目录的文件
@@ -206,7 +209,7 @@ class IndexController extends Controller {
                 $Dir = new Dir();
                 $Dir->delDir(SITE_PATH . 'd/file/contents/');
             } catch (Exception $exc) {
-                
+
             }
         }
         $sqlFormat = sql_split($sqldata, $dbPrefix);
@@ -237,7 +240,7 @@ class IndexController extends Controller {
         }
         if ($i === 999999)
             exit;
-        
+
         //更新配置信息
         mysql_query("UPDATE `{$dbPrefix}config` SET  `value` = '$site_name' WHERE valuename='sitename'");
         mysql_query("UPDATE `{$dbPrefix}config` SET  `value` = '$site_url' WHERE valuename='siteurl' ");
@@ -245,7 +248,7 @@ class IndexController extends Controller {
         mysql_query("UPDATE `{$dbPrefix}config` SET  `value` = '$seo_description' WHERE valuename='siteinfo'");
         mysql_query("UPDATE `{$dbPrefix}config` SET  `value` = '$seo_keywords' WHERE valuename='sitekeywords'");
         mysql_query("UPDATE `{$dbPrefix}config` SET  `value` = '$siteemail' WHERE valuename='siteemail'");
-        //读取配置文件，并替换真实配置数据 
+        //读取配置文件，并替换真实配置数据
         $strConfig = file_get_contents(MODULE_PATH . 'Data/mysql.inc.php');
         $strConfig = str_replace('{DB_HOST}', $dbHost, $strConfig);
         $strConfig = str_replace('{DB_NAME}', $dbName, $strConfig);

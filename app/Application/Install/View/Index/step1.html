@@ -5,7 +5,7 @@
             <li>
                 <a href="{:U('step1')}" class="selected" isdone="1" rel="1">
                   <label class="wizard-step">1</label>
-                  <span class="wizard-description">
+                  <span class="wizard-description" style="color:#000">
                      阅读协议
                   </span>
                 </a>
@@ -23,7 +23,7 @@
                   <label class="wizard-step">3</label>
                   <span class="wizard-description">
                     参数配置
-                  </span>                   
+                  </span>
                 </a>
             </li>
             <li>
@@ -31,7 +31,7 @@
                   <label class="wizard-step">4</label>
                   <span class="wizard-description">
                      安装进行
-                  </span>                   
+                  </span>
                 </a>
             </li>
                <li>
@@ -39,7 +39,7 @@
                   <label class="wizard-step">5</label>
                   <span class="wizard-description">
                      完成安装
-                  </span>                   
+                  </span>
                 </a>
             </li>
           </ul>
@@ -62,7 +62,7 @@
                           </div>
                       </div>
                  </div>
-                 <div class='actionBar'> 
+                 <div class='actionBar'>
                         <div class="form-row">
                             <div class="form-input col-md-10 col-md-offset-2">
                                 <button class="btn ui-state-default medium" onclick="history.go(-1)">
@@ -71,16 +71,17 @@
                                  <button class="btn primary-bg medium btn-next" >
                                      <span class="button-content" >继续</span>
                                   </button>
-                            
+
                                 </div>
                         </div>
                    </div>
                  </form>
          </div>
      </div>
- 
+
 
 <script type="text/javascript">
+    //同意协议JS
     $(function(){
        $(".btn-next").click(function(){
            if($("#igreen").is(':checked')){
