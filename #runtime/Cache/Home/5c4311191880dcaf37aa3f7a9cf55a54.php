@@ -95,7 +95,7 @@
                     <strong class="icon-archive  doc-h3"> 最新文章</strong>
                     </div>-->
                         <ul class="list-text list-underline list-striped">
-                               
+                            <li><span class="date">2018-01-16 12:05:20</span><a href="<?php echo U('Article/info',array('id'=>2));?>" class="active">12121</a></li>   
                            
                         </ul>
 

@@ -1,0 +1,164 @@
+[ 2018-01-16T12:32:44+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] require(G:\wamp64\www\LinxwFFcms/app/Common/Conf/redis.inc.php): failed to open stream: No such file or directory G:\wamp64\www\LinxwFFcms\app\Application\Home\Conf\config.php 第 5 行.
+
+[ 2018-01-16T12:33:12+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:33:15+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:33:15+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:33:17+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:33:19+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-01-16T12:33:19+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:33:25+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:34:31+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=lists&cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:35:33+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Page&a=zhaop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:35:35+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=lists&cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:35:41+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:35:43+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:35:43+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Member&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-01-16T12:35:46+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Page&a=zhaop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:35:47+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=lists&cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:35:51+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:44:37+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:45:06+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=info&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 1146:Table 'linxwffcms.lin_comment' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `lin_comment` WHERE `pid` = 0 AND `relation_id` = 2 AND `channel_id` = 1 AND `is_audit` = '1' ORDER BY ctime desc LIMIT 0,5  
+
+[ 2018-01-16T12:47:26+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:47:54+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T12:47:56+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=info&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'linxwffcms.chou_article_data' doesn't exist
+ [ SQL语句 ] : SELECT `title`,`content`,`username`,`inputtime` FROM lin_articles a left join chou_article_data as data on data.articles_id =a.id   WHERE a.id = '2' LIMIT 1  
+
+[ 2018-01-16T12:49:53+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=info&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 1146:Table 'linxwffcms.chou_article_data' doesn't exist
+ [ SQL语句 ] : SELECT `title`,`content`,`username`,`inputtime` FROM lin_articles a left join chou_article_data as data on data.articles_id =a.id   WHERE a.id = '2' LIMIT 1  
+
+[ 2018-01-16T12:53:00+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=info&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'linxwffcms.chou_article_data' doesn't exist
+ [ SQL语句 ] : SELECT `title`,`content`,`username`,`inputtime` FROM lin_articles a left join chou_article_data as data on data.articles_id =a.id   WHERE a.id = '2' LIMIT 1  
+
+[ 2018-01-16T12:55:25+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=info&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:57:25+08:00 ] 127.0.0.1 /LinxwFFcms/index.php?m=Home&c=Article&a=info&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T12:59:10+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T13:00:19+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T13:01:40+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-16T13:02:47+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-16T13:02:56+08:00 ] 127.0.0.1 /LinxwFFcms/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

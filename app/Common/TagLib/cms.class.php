@@ -1,20 +1,17 @@
 <?php
 
 /*
- * SIKCMS标签解析库
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/3/7
+ * 标签解析库
  */
 
 namespace Common\TagLib;
 
 use Think\Template\TagLib;
 
-class Sikcms extends TagLib {
+class cms extends TagLib {
 
 //数据库表达式
-    protected $comparisonSikcms = array(
+    protected $comparison = array(
         '{eq}' => '=',
         '{neq}' => '<>',
         '{elt}' => '<=',
@@ -58,7 +55,7 @@ class Sikcms extends TagLib {
             $where['title'] = array('like','%'.$keyword.'%');
         }
         $list = M("articles")->field($field)->where($where)->limit($limit)->order($order)->select();
-      
+
         $str = field_list($content, $list); //模板数据处理
         return $str;
     }
@@ -79,7 +76,9 @@ class Sikcms extends TagLib {
         $fun = $attr['fun'];
         $field = empty($attr['field']) ? array('title', 'content', 'username', 'inputtime') : $attr['field'];
         $where['a.id'] = $id;
-        $infos = M('articles')->alias('a')->field($field)->join('left join chou_article_data as data on data.articles_id =a.id ')->where($where)->find();
+
+        $db_prefix = C('DB_PREFIX');
+        $infos = M('articles')->alias('a')->field($field)->join("left join {$db_prefix}article_data as data on data.articles_id =a.id ")->where($where)->find();
         $str = field_info($infos[$key], $fun); //模板数据处理
         return $str;
     }
@@ -94,7 +93,7 @@ class Sikcms extends TagLib {
      *    @return array|string
      */
     public function _channel($attr, $content) {
-        
+
     }
 
 }

@@ -24,7 +24,7 @@ class ArticleController extends CommonController {
         $this->assign('page',$page);
         $this->display();
     }
-    
+
     /**
      * 文章详情
      */
@@ -32,17 +32,12 @@ class ArticleController extends CommonController {
        $id = I('get.id',0);
        $article_db = D('Articles');
        $info = $article_db->getInfo($id);
-       $comment = new CommentController();
-       $comment_list = $comment->getlistById($id, $info['channel_id']);
-       $comment_count = $comment->getCommentCount($id,$info['channel_id']);
-       $this->assign('comment_count',$comment_count);
-       $this->assign('comment_list',$comment_list);
        $this->assign('info',$info);
        $this->display();
     }
-    
-    
-    
-   
- 
+
+
+
+
+
 }

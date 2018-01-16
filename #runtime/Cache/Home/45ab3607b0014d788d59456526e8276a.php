@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
     <head>
@@ -83,89 +82,41 @@
         <?php nav($item['sub_item']); ?>
 </ul>
 <?php } } } ?>
-
-     <div class="bg-main doc-intro">
-            <div class="container">
-    <h1 class="fadein-top">思科CMS内容管理系统</h1>
-    <p class="fadein-bottom">简单实用,可扩展,灵活变动,轻巧</p>
-            </div>
-    </div>
-     <div class="alert alert-red">
-    <span class="close rotate-hover"></span><strong>提示：</strong>2017/01/01开放源码下载。</div>
-</div>
-
+ 
         <div class="container">
             <div class="line-big">
-                <div class="xs9 padding-top">
-                    <div class="panel-head bg-white ">
-                    <strong class="icon-archive text-main doc-h3"> 最新文章</strong>
-                    </div>
-                      <ul class="list-text list-underline list-striped">
-                        <li><span class="date">2018-01-16 12:05:20</span><a href="<?php echo U('Article/info',array('id'=>2));?>" class="active">12121</a></li>
-                        </ul>
-                    <br>
-     <a class="button bg-main button-big" href="<?php echo U('Article/lists');?>">更多...</a>
-                </div>
-                <div class="xs3 padding-top">
-                    <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-download text-main doc-h3"> 版本下载</strong>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 基础版</a>
+                <div class="xs12"> 
+                 <ul class="bread">
+    <?php echo ($curpos); ?>
+</ul>
 
-                            </div>
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 完整版</a>
-                            </div>
-                            <div class="form-group">
-                                完整版下载加群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=73acc15173fe0bcf46467e80f2c1ab6e50166f7e59383cb12bcb1b902261bbca">498476759</a>
-                            </div>
-                        </div>
-     </div>
-                   <br>
-                     <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-user text-main doc-h3"> <?php if($userinfo){ ?>欢迎<?php echo ($userinfo['username']); }else{ ?>登录<?php } ?></strong>
-                        </div>
-     <?php if($userinfo){ ?>
-     <div class="panel-body">
-         <div class="form-group">
-              您好:<?php echo ($userinfo['nickname']); ?>              
-           </div>
-         <div class="form-group">
-              目前你是第<?php echo ($userinfo['userid']); ?>位访客 , 当前IP:<?php echo get_client_ip(); ?>                 
-          </div>
-     </div>
-     <?php }else{ ?>
-                        <div class="panel-body">
-                            <form action="<?php echo U('Member/login');?>" method="post">
-                            <div class="form-group">
-                                <input type="text" class="input" placeholder="用户名" name="username"/>
-                            </div>
-                            <div class="form-group">
-                                  <input type="password" class="input" placeholder="密码" name="password"/>
-                            </div>
-                            <div class="form-group">
-                                <button class="button bg-main" id="login" type="submit">登录</button>&nbsp;&nbsp;<a href="<?php echo U('Member/register');?>">没有帐号?去注册</a>
-                            </div>
-                                </form>
-                        </div>
-     <?php } ?>
-     </div>
+                    <div class="detail">
+                        <div class="border-top padding-top" ></div>
+                        <h1>诚挚邀请您加入</h1>
+                        <p style="font-size: 15px;">
+                        <h2>你可以有：</h2><br>
+                            1、精通PHP+MYSQL编程，3年以上开发经验;<br>
+                            2、熟悉数据库设计，sql语言；有良好的编程习惯和简洁清晰的代码风格;<br>
+                            3、熟悉Javascript, AJAX, HMTL，XHTML，CSS等前端技术;<br>
+                            4、熟悉网站的设计、规划和制作流程，参与过成功项目的开发工作;<br>
+                            5、熟悉Linux/Unix操作系统，掌握常用的基本配置和命令;<br>
+                            6、熟悉TP框架。<br>
+                            如果你是有理想有目标的开发者大牛并对开发cms感兴趣，欢迎你一起加入我们这个开发者大家庭，共同完善sikcms系统。<br>
+                            QQ:1114526565
+                        </p>
+                    </div>
                 </div>
+              
             </div>
+          
         </div>
 
-
-  <div class="container doc-footer">
+        <div class="container doc-footer">
             <div class="border-top padding-top">
                 <div class="text-center height-big">
                     版权所有 © sikcms.cn All Rights Reserved，<a href="http://www.pintuer.com" target="_blank">Theme By 拼图</a> &nbsp;赣ICP备：16007200</div>
 
             </div>
         </div>
-
     </body>
 </html>
