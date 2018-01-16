@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 快乐筹cms 后台软件模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.klchoucms.com, All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 后台软件模块
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -22,7 +18,7 @@ class GoodsController extends AdminBase {
     //软件状态码
     public $status = array();
     //模型标识
-    public $nid ='goods'; 
+    public $nid ='goods';
     //模型ID
     public $mode_id=7;
     //是否为管理员操作标识
@@ -126,7 +122,7 @@ class GoodsController extends AdminBase {
                 'operater_id'=>$user['userid'],
                 'author'=>$user['username'],
                 'isadmin'=>$this->isadmin,
-            ); 
+            );
             $res = $goods_db->where('goods_id=' . $post['goods_id'])->save($data);
             if (!$res) {
                 $this->error('修改失败');

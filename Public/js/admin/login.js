@@ -20,9 +20,6 @@ $(function() {
         $("#loginForm").submit();
         return false
     });
-    if ($.cookie("username")) {
-        $("#signin-username").val($.cookie("username"))
-    }
     if ($("#signin-username").val() == "") {
         $("#signin-username").focus()
     } else {

@@ -61,7 +61,7 @@ and open the template in the editor.
                             自定属性:
                             <span class="required"></span>
                         </label>
-                    </div> 
+                    </div>
                     <div class="form-checkbox-radio col-md-10">
                        <?php foreach($flag as $k=>$v){ ?>
                            <input id="" name="flag[]" value="{$k}" type="checkbox">
@@ -96,7 +96,7 @@ and open the template in the editor.
                         <label for="">缩略图:  <span class="required">*</span></label>
                     </div>
                     <div class="form-input col-md-5 " >
-               
+
                                 <span class="btn medium bg-green fileinput-button">
                                     <span class="button-content">
                                       <i class="glyph-icon icon-plus"></i>
@@ -107,7 +107,7 @@ and open the template in the editor.
                           <div class="form-img show_pic" style="">
                             <table role="presentation" class="table table-striped">
                                 <tbody class="files">
-                                 
+
                                 </tbody>
                             </table>
                          </div>
@@ -142,10 +142,10 @@ and open the template in the editor.
               initialFrameWidth:880,
               initialFrameHeight:400
              // ue.setContent('hello'); //设置编辑器内容
-       
+
 
           });
-          
+
     </script>
 
     <script type="text/javascript">
@@ -212,7 +212,7 @@ and open the template in the editor.
                         if(jsonData.status == 1) {
                             var picarea='';
                            $.each( jsonData.path, function(index, content)
-                             { 
+                             {
                                  picarea += "<tr class='template-upload'><td><img src='"+content.thumb+"' width='120'/></td>";
                                  picarea += "<td><input type='hidden' name='imgs' value='"+content.original+"' /><p class='name'>"+content.original+"</p></td>";
                                  picarea +="<td><button class='btn medium bg-orange cancel'  onclick='delete_pic(this)'><span class='button-content'><i class='glyph-icon icon-ban-circle'></i></span>删除</button></td></tr>";
@@ -225,7 +225,7 @@ and open the template in the editor.
                     }
                 };
              $("#uploadfile").change(function(){
-                  ajaxUpload(opt); 
+                  ajaxUpload(opt);
              });
          });
          //删除图片

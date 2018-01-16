@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 数据表管理模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 数据表管理模块
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -284,7 +280,7 @@ class DatabaseController extends AdminBase {
      */
     public function download($time = 0) {
         ob_start();
-        if (is_numeric($time) ) { 
+        if (is_numeric($time) ) {
            //获取备份文件信息
             $name = date('Ymd-His', $time) . '-*.sql*';
             $path = realpath($this->config['DB_PATH']) . DIRECTORY_SEPARATOR . $name;
@@ -293,6 +289,6 @@ class DatabaseController extends AdminBase {
             downfile($file);
         }else{
             $this->error('参数错误！');
-        } 
+        }
     }
 }

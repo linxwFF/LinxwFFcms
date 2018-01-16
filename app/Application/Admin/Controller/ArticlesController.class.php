@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 后台文章内容模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 后台文章内容模块
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -26,7 +22,7 @@ class ArticlesController extends AdminBase {
     //模型ID对应chou_module 表中id
     public $mode_id=5;
 
-    
+
     //初始化
     public function _initialize() {
         parent::_initialize();

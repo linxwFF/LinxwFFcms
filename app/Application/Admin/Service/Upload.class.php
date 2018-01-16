@@ -1,10 +1,7 @@
 <?php
 
 /*
- * 思科cms 后台上传类
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/9/23
+ * cms 后台上传类
  *
  */
 

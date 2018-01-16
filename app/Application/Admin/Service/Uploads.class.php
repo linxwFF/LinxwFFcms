@@ -1,10 +1,7 @@
 <?php
 
 /*
- * 思科cms 后台上传类
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/9/23
+ * cms 后台上传类
  *
  */
 
@@ -59,7 +56,7 @@ class Uploads {
             //原图地址
             $pic[$k]['original'] = UPLOADS_PATH . $thumb['savepath'] . $thumb['savename'];
             $file_thumb = UPLOADS_PATH . 'thumb/' . $thumb['savepath'] . $thumb['savename'];
-            //生成缩略图  
+            //生成缩略图
             $this->_mkdir(UPLOADS_PATH . 'thumb/' . $thumb['savepath']);
             $this->_thumb($pic[$k]['original'], $file_thumb);
             $pic[$k]['thumb'] = $file_thumb;

@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 后台用户模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 后台用户模型
 // +----------------------------------------------------------------------
 
 namespace Admin\Model;
@@ -23,7 +19,7 @@ class UserModel extends Model {
         array('email', 'email', '邮箱地址有误！'),
         array('username', '', '账号名称已经存在', 0, 'unique', 1),
     );
-    //array(填充字段,填充内容,[填充条件,附加规则]) 
+    //array(填充字段,填充内容,[填充条件,附加规则])
     protected $_auto = array(
         array('create_time', 'time', 1, 'function'),
         array('update_time', 'time', 3, 'function'),
@@ -105,7 +101,7 @@ class UserModel extends Model {
 
     /**
      * 修改管理员信息
-     * @param type $data 
+     * @param type $data
      */
     public function amendManager($data) {
         if (empty($data) || !is_array($data) || !isset($data)) {

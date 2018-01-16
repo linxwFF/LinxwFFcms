@@ -1,12 +1,8 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 模型管理控制器
+// | cms 模型管理控制器
 // +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
-// +--------------
 
 namespace Admin\Controller;
 
@@ -45,7 +41,7 @@ class ModuleController extends AdminBase {
     public function edit() {
         $id = I('get.id');
         if (IS_POST) {
-            
+
         }
         $module_db = D('Module');
         $info = $module_db->getInfo($id);
@@ -68,7 +64,7 @@ class ModuleController extends AdminBase {
      * 模型添加
      */
     public function add() {
-       $this->error('暂未开放');  
+       $this->error('暂未开放');
     }
 
     /**

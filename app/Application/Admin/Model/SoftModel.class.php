@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 软件模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 软件模型
 // +----------------------------------------------------------------------
 
 namespace Admin\Model;
@@ -14,7 +10,7 @@ use Common\Model\Model;
 
 class SoftModel extends \Think\Model {
 
-    //array(填充字段,填充内容,[填充条件,附加规则]) 
+    //array(填充字段,填充内容,[填充条件,附加规则])
     protected $_auto = array(
         array('inputtime', 'time', 1, 'function'),
         array('updatetime', 'time', 1, 'function')

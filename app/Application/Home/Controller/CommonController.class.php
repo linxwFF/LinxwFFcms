@@ -3,10 +3,9 @@
 namespace Home\Controller;
 
 use Think\Controller;
-use Common\Controller\SikCMS;
 use Home\Model\NavModel;
 
-class CommonController extends SikCMS {
+class CommonController extends \Think\Controller {
 
     public function _empty() {
         header('location:' . C('ERROR_PAGE'));

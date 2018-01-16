@@ -1,0 +1,1 @@
+a:7:{i:0;s:9:"advert_id";i:1;s:4:"type";i:2;s:5:"title";i:3;s:5:"ctime";i:4;s:6:"status";s:3:"_pk";s:9:"advert_id";s:5:"_type";a:5:{s:9:"advert_id";s:7:"int(10)";s:4:"type";s:12:"varchar(200)";s:5:"title";s:12:"varchar(200)";s:5:"ctime";s:7:"int(10)";s:6:"status";s:20:"enum('true','false')";}}

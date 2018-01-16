@@ -1,10 +1,7 @@
 <?php
 
 /*
- * 思科cms 后台用户相关
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/3/11
+ * cms 后台用户相关
  *
  */
 
@@ -120,16 +117,16 @@ class User {
      */
 
     private function registerLogin(array $userInfo) {
-        
+
         //写入session
         session(self::userUidKey, \Libs\Util\Encrypt::authcode((int) $userInfo['userid'], ''));
         //更新状态
         D('Admin/User')->loginStatus((int) $userInfo['userid']);
-        
+
         //注册权限
          Access::saveAccessList((int) $userInfo['userid']);
     }
-    
+
     /**
      * 获取用户信息
      * @param type $identifier 用户名或者用户ID

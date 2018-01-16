@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 快乐筹cms  栏目模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.klchoucms.com, All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms  栏目模型
 // +----------------------------------------------------------------------
 
 namespace Admin\Model;
@@ -26,7 +22,7 @@ class ChannelModel extends \Think\Model {
         array('ishidden', array(0, 1), '值的范围不正确！', 0, 'in'), // 判断是否在一个范围内
         array('ispart', array(0, 1, 2), "值的范围不正确！", 0, 'in')
     );
-    //array(填充字段,填充内容,[填充条件,附加规则]) 
+    //array(填充字段,填充内容,[填充条件,附加规则])
     protected $_auto = array(
         array('ctime', 'time', 1, 'function'),
     );
@@ -61,7 +57,7 @@ class ChannelModel extends \Think\Model {
 
     /**
      * 获取栏目对应的模型实例
-     * @param int $mode_id 
+     * @param int $mode_id
      * @return object
      */
     public function getModelInstance($mode_id = 5) {

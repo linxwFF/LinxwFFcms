@@ -1,10 +1,7 @@
 <?php
 
 /*
- * 思科cms 后台权限相关
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/6/28
+ * cms 后台权限相关
  *
  */
 
@@ -24,7 +21,7 @@ use Think\Db;
 class Access {
 
     /**
-     * 检查当前登录用户是否有权限 
+     * 检查当前登录用户是否有权限
      * @param type $map [模块/控制器/方法]，没有时自动获取当前进行判断
      * @return boolean
      */
@@ -192,6 +189,6 @@ class Access {
         return $accessList;
     }
 
-   
+
 
 }

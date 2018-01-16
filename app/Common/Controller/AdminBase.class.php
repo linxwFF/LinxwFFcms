@@ -5,7 +5,7 @@ namespace Common\Controller;
 //定义后台
 define('IN_ADMIN', true);
 
-class AdminBase extends SikCMS {
+class AdminBase extends \Think\Controller {
 
     //初始化
     protected function _initialize() {
@@ -19,7 +19,7 @@ class AdminBase extends SikCMS {
             "NOT_AUTH_MODULE" => "Public", //无需认证模块
             "USER_AUTH_GATEWAY" => U("Admin/Public/login"), //登录地址
         ));
-        
+
         //是否有权限
        if (false == \Admin\Service\Access::AccessDecision(MODULE_NAME)) {
             //检查是否登录
@@ -71,7 +71,7 @@ class AdminBase extends SikCMS {
     }
 
     /**
-     * 
+     *
      * 左侧对应子菜单
      */
     public function public_left($menuid = 0) {

@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 后台菜单模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// |  后台菜单模块
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -26,6 +22,7 @@ class MenuController extends AdminBase {
             $id = I('get.id', 0);
         }
         $where = array('pid' => $id);
+        //每页显示条数
         $rows = C('LISTROWS');
         $order = array('sort' => 'asc');
         $total = $menu_db->where($where)->count();

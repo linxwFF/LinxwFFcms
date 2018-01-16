@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 后台公共模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// |  后台公共模块 登录页面，登录验证，退出
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -14,7 +10,7 @@ use Common\Controller\AdminBase;
 use Admin\Service\User;
 
 class PublicController extends AdminBase{
-    
+
     //后台登录界面
     public function login(){
         if(User::getInstance()->userid){
@@ -22,7 +18,7 @@ class PublicController extends AdminBase{
         }
         $this->display();
     }
-    
+
     //后台登录验证
     public function doLogin(){
      //记录失败者ID
@@ -45,15 +41,15 @@ class PublicController extends AdminBase{
             $this->error('用户名或密码错误，重新登录',U('Public/login'));
         }
     }
- 
+
     //退出登录
     public function logout(){
-       
+
         if(User::getInstance()->logout()){
             //手动登出，清空forward
             cookie("forward",NULL);
             $this->success("注销成功",U('Admin/Public/login'));
         }
     }
-    
+
 }

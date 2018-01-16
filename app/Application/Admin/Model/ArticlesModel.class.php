@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 文章内容模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 文章内容模型
 // +----------------------------------------------------------------------
 
 namespace Admin\Model;
@@ -14,7 +10,7 @@ use Common\Model\Model;
 
 class ArticlesModel extends \Think\Model {
 
-    //array(填充字段,填充内容,[填充条件,附加规则]) 
+    //array(填充字段,填充内容,[填充条件,附加规则])
     protected $_auto = array(
         array('inputtime', 'time', 1, 'function'),
         array('updatetime','time',1,'function')
@@ -59,6 +55,6 @@ class ArticlesModel extends \Think\Model {
          $db_prefix = C('DB_PREFIX');
          return $this->alias('a')->join("inner join {$db_prefix}article_data as `data` on `data`.articles_id=a.id ")->where(array('a.id' => $id))->find();
     }
-    
+
 
 }

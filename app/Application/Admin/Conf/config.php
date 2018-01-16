@@ -2,8 +2,8 @@
 
 //引入主体配置
 $mysql = require (PROJECT_PATH."Common/Conf/mysql.inc.php");
-$redis = require(PROJECT_PATH."Common/Conf/redis.inc.php");
 $version = require(PROJECT_PATH."Common/Conf/version.inc.php");
+
 //基础前台配置项
 $array = array(
     'URL_MODEL'        => '0', //URL模式 普通模式 0 PATHINF O 模式 1REWRITE模式	2 兼容模式 	3
@@ -21,4 +21,4 @@ $array = array(
      '__STATIC__' =>STATIC_PATH.'/admin', //后台对应静态资源地址
     ),
 );
-return array_merge($mysql, $redis, $array,$version);
+return array_merge($mysql, $array,$version);

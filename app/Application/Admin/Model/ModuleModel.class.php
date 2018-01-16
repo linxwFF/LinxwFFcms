@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms  频道模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms  频道模型
 // +----------------------------------------------------------------------
 
 namespace Admin\Model;
@@ -14,7 +10,7 @@ use Common\Model\Model;
 
 class ModuleModel extends Model {
 
-    
+
     /**
      * 获取模型信息
      */
@@ -24,8 +20,8 @@ class ModuleModel extends Model {
         }
         return $this->where("id=$id")->find();
     }
-    
-    
+
+
      /**
      * 获取模型信息
      */
@@ -35,14 +31,14 @@ class ModuleModel extends Model {
         }
         return $this->where("nid='$nid'")->find();
     }
-    
-    
+
+
     /**
      * 列表获取
      */
     public function getList($field = "*", $page = 1, $rows = 20) {
        return $this->field($field)->page($page, $rows)->select();
-     
+
     }
 
     /**

@@ -1,9 +1,6 @@
 <?php
 /*
  * 后台系统函数库
- * @author zhijian.chen
- * @email 1114526565@qq.com
- * @date 2016/3/7
  */
 
 /**
@@ -38,9 +35,9 @@ function configs($key,$field){
        return $list;
    }else{
        if(empty($field)){
-         return $list[$key];  
+         return $list[$key];
        }else{
-          return $list[$key][$field];  
+          return $list[$key][$field];
        }
    }
 }
@@ -85,7 +82,6 @@ function downfile($fileurl,$filename='data.gz')
         if($level!=1){
           $space .="|--";
         }
-       } 
+       }
      return $space;
  }
-

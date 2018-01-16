@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 快乐筹cms 后台软件模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.klchoucms.com, All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 后台软件模块
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -22,7 +18,7 @@ class SoftController extends AdminBase {
     //软件状态码
     public $status = array();
     //模型标识
-    public $nid ='soft'; 
+    public $nid ='soft';
     //模型ID
     public $mode_id=6;
     //是否为管理员操作标识

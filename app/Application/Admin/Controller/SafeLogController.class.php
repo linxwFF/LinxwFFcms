@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 后台安全记录日志模块
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 后台安全记录日志模块
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
@@ -16,7 +12,7 @@ class SafeLogController extends AdminBase {
 
     //登录日志
     public function index() {
-        
+
     }
 
     //操作日志
@@ -35,7 +31,7 @@ class SafeLogController extends AdminBase {
        $log_db = D('Operationlog');
        $res = $log_db->deleteAMonthago();
        $res?$this->success('删除成功'):$this->error('删除失败，已删');
-       
+
     }
 
 }

@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms 角色权限模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms 角色权限模型
 // +----------------------------------------------------------------------
 
 namespace Admin\Model;
@@ -42,7 +38,7 @@ class AccessModel extends Model {
     /**
      * 检查用户是否有对应权限
      * @param type $param 方法[模块/控制器/方法]，为空自动获取
-     * @return boolean 
+     * @return boolean
      */
     public function isPass($param = '') {
         if (\Admin\Service\User::getInstance()->isAdministrator()) {
