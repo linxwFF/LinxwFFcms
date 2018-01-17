@@ -3432,3 +3432,79 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 
+[ 2018-01-17T16:38:42+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=index&menuid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-17T16:38:42+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=main&menuid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-17T16:38:44+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=index&menuid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-17T16:38:44+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Index&a=main&menuid=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-17T16:38:45+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operationLog&menuid=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-17T16:38:48+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operateDelete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: menuid G:\wamp64\www\LinxwFFcms\app\Common\Controller\AdminBase.class.php 第 65 行.
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 0 AND `status` = 1 ORDER BY sort asc LIMIT 1000   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: data G:\wamp64\www\LinxwFFcms\app\Common\Controller\AdminBase.class.php 第 83 行.
+SQL: SELECT * FROM `lin_menu` WHERE `controller` = 'SafeLog' AND `action` = 'operateDelete' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `lin_operationlog` WHERE `time` < 1513586328 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id G:\wamp64\www\LinxwFFcms\app\Application\Admin\Service\User.class.php 第 78 行.
+NOTIC: [8] Undefined index: validate G:\wamp64\www\LinxwFFcms\app\Core3.2.3\ThinkPHP\Library\Think\Model.class.php 第 1183 行.
+NOTIC: [8] Undefined index: auto G:\wamp64\www\LinxwFFcms\app\Core3.2.3\ThinkPHP\Library\Think\Model.class.php 第 1126 行.
+SQL: INSERT INTO `lin_operationlog` (`uid`,`status`,`info`,`get`,`time`,`ip`) VALUES ('0','1','提示语：删除成功<br/>模块：Admin，控制器:SafeLog,方法:operateDelete<br/>请求方式：Ajax','http://127.0.0.1/LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operationLog&menuid=19','1516178328','127.0.0.1') [ RunTime:0.0000s ]
+
+[ 2018-01-17T16:38:48+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operationLog&menuid=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-17T16:38:50+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operateDelete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: menuid G:\wamp64\www\LinxwFFcms\app\Common\Controller\AdminBase.class.php 第 65 行.
+SQL: SELECT * FROM `lin_menu` WHERE `pid` = 0 AND `status` = 1 ORDER BY sort asc LIMIT 1000   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data G:\wamp64\www\LinxwFFcms\app\Common\Controller\AdminBase.class.php 第 83 行.
+SQL: SELECT * FROM `lin_menu` WHERE `controller` = 'SafeLog' AND `action` = 'operateDelete' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lin_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `lin_operationlog` WHERE `time` < 1513586330 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id G:\wamp64\www\LinxwFFcms\app\Application\Admin\Service\User.class.php 第 78 行.
+NOTIC: [8] Undefined index: validate G:\wamp64\www\LinxwFFcms\app\Core3.2.3\ThinkPHP\Library\Think\Model.class.php 第 1183 行.
+NOTIC: [8] Undefined index: auto G:\wamp64\www\LinxwFFcms\app\Core3.2.3\ThinkPHP\Library\Think\Model.class.php 第 1126 行.
+SQL: INSERT INTO `lin_operationlog` (`uid`,`status`,`info`,`get`,`time`,`ip`) VALUES ('0','1','提示语：删除成功<br/>模块：Admin，控制器:SafeLog,方法:operateDelete<br/>请求方式：Ajax','http://127.0.0.1/LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operationLog&menuid=19','1516178330','127.0.0.1') [ RunTime:0.0010s ]
+
+[ 2018-01-17T16:38:50+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=SafeLog&a=operationLog&menuid=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-17T16:39:38+08:00 ] 127.0.0.1 /LinxwFFcms/admin.php?m=Admin&c=Channel&a=index&menuid=55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

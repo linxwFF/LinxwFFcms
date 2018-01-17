@@ -49,10 +49,12 @@
 
 本地部署
 
-http://localhost/sikcms/install.php 进入安装
+http://localhost/LinxwFFcms/install.php 进入安装
 
-http://127.0.0.1/LinxwFFcms/index.php 前台
-http://127.0.0.1/LinxwFFcms/admin.php 后台  用户名:admin 密码:admin
+http://localhost/LinxwFFcms/index.php 前台
 
+http://localhost/LinxwFFcms/admin.php 后台
+
+用户名:admin 密码:admin
 
 # LinxwFFcms
