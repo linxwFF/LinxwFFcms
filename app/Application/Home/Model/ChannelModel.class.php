@@ -1,11 +1,7 @@
 <?php
 
 // +----------------------------------------------------------------------
-// | 思科cms  栏目模型
-// +----------------------------------------------------------------------
-// | Copyright (c) 2015-2016 http://www.sikcms.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: zhijian.chen <1114526565@qq.com>
+// | cms  栏目模型
 // +----------------------------------------------------------------------
 
 namespace Home\Model;
@@ -13,7 +9,7 @@ namespace Home\Model;
 use Common\Model\Model;
 
 class ChannelModel extends \Think\Model {
-   
+
 
     /**
      * 获取栏目
@@ -23,7 +19,7 @@ class ChannelModel extends \Think\Model {
         $where['parentid'] =0;
         $result = $this->where($where)->order($order)->select();
         return $result;
-   
+
     }
       /**
      * 获取父类下的子栏目
@@ -33,11 +29,11 @@ class ChannelModel extends \Think\Model {
         $where['parentid'] =$parentid;
         $result = $this->where($where)->order($order)->select();
         return $result;
-   
+
     }
 
-    
-    
+
+
     /**
      * 栏目下拉
      * @param int $parentid 父类ID
@@ -58,11 +54,11 @@ class ChannelModel extends \Think\Model {
             $result = array();
         }
         return $result;
-   
+
     }
 
 
-   
+
 
     /**
      * 栏目总数

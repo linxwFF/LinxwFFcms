@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<include file="Common/header"/>
+<body>
+
+<include file="Common/nav"/>
+
+<div class="leve">
+    <div class="w_auto">
+        <div class="leve_left">
+            <div class="cont_list2">
+            	<ul>
+                	<li><a href="{:U('Index/index')}"><i>首页</i><span></span></a></li>
+                    <li><a class="hover2" title="产品中心" href="{:U('Index/product')}"<i>产品中心详情</i><span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="leve_right">
+        	<div class="leve_cont">
+                <div class="nav_page">
+                    <a href="{:U('Index/index')}">首页</a>
+                         &raquo;
+                        <a href="{:U('Index/product')}">产品中心详情</a>
+                </div>
+                <div class="clearfix"></div>
+				<div class="cont_title">
+                	{$info.title}
+                </div>
+				<div class="news_read">
+				{$info.content}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<include file="Common/footer2"/>
+</body>
+</html>

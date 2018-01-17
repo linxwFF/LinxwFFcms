@@ -85,7 +85,7 @@ class cms extends TagLib {
 
     /**
      * 频道标签
-     * 例: <channel typeid="2" row="10" type='top'></article>
+     * 例: <channel typeid="2" row="10" type='top'></channel>
      * 参数使用说明:
      *    @typeid  栏目id,可参入数字，也可以传递变量 $catid
      *    @row 显示数量

@@ -1,286 +1,125 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo strip_tags(C('SYSTEM_NAME'));?>-<?php echo ($title); ?></title>
-        <meta name="description" content="<?php echo strip_tags(C('SYSTEM_NAME'));?>">
-        <script>
-            var _hmt = _hmt || [];
-            (function () {
-                var hm = document.createElement("script");
-                hm.src = "//hm.baidu.com/hm.js?2a0ed9d85eb19c022b5afb2db2389ef8";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-    </head>
-    <script type="text/javascript" src="./statics/home/pintuer/jquery.js?<?php echo C('KLCHOU_BUILD');?>"></script>
-    <script type="text/javascript" src="./statics/home/pintuer/pintuer.js?<?php echo C('KLCHOU_BUILD');?>"></script>
-    <link rel="stylesheet" type="text/css" href="./statics/home/pintuer/pintuer.css?<?php echo C('KLCHOU_BUILD');?>">
-    <link rel="stylesheet" type="text/css" href="./statics/home/css/style.css?<?php echo C('KLCHOU_BUILD');?>">
+<head>
+<meta charset="utf-8">
+<title>睿能科技</title>
+<meta name="keywords" content="睿能科技" />
+<meta name="description" content="睿能科技" />
+<link rel="stylesheet" href="./statics/home/css/style.css" type="text/css">
+<script type="text/javascript" src="./statics/home/js/jquery.js"></script>
+</head>
+
 <body>
-     <!--头部导航-->
-<div class="doc-header">
-<div class="navbar navbar-big bg-white bg-inverse  nav-big ">
-    <div class="line">
-        <div class="xl12 xs2 xm2 xb1">
-            <button class="button icon-navicon float-right" data-target="#header-demo3">
-            </button>
-            <!--<img src=" "/>-->
+
+<div class="head">
+    <div class="w_auto">
+        <div class="logo-cont">
+			<div class="logo"><a href="<?php echo U('Index/index');?>"></a></div>
+			<span class="logo-gp">股票简称: <b>睿美科技</b>&nbsp;&nbsp;&nbsp;股票代码: <b>600000</b></span>
+		</div>
+        <div class="nav" style="padding-top:10px;">
+            <ul id="myHeadMenu">
+       		    <li><a  href="<?php echo U('Index/about');?>">关于我们</a></li>
+	            <li><a  href="<?php echo U('Index/product');?>">产品中心</a></li>
+	            <li><a  href="<?php echo U('Article/lists');?>">新闻中心</a></li>
+	            <li><a  href="<?php echo U('Index/contact');?>">联系我们</a></li>
+            </ul>
         </div>
 
-        <div class=" xl12 xs10 xm10 xb11  padding-top  padding-bottom nav-navicon" >
-            <div class="xs8 xm8 xb6">
-                <ul class="nav nav-menu nav-inline">
-                    <li><a  href="/">首页</a> </li>
-                    <?php nav($nav); ?>
-                    <li><a  href="<?php echo U('Page/zhaop');?>">邀你加入</a> </li>
+    </div>
+	<div class="clearfix"></div>
+</div>
+
+
+<div class="leve">
+    <div class="w_auto">
+        <div class="leve_left">
+            <div class="cont_list">
+                <ul>
+                	<li><a href="<?php echo U('Index/index');?>"><i>首页</i><span></span></a></li>
+                    <li><a class="hover2" title="公司新闻" href="<?php echo U('Article/lists');?>"<i>公司新闻</i><span></span></a></li>
                 </ul>
             </div>
-            <div class="xs4 xm4 xb3">
-                <form>
-                    <div class="input-group padding-little-top">
-                            <input type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
-                            <span class="addbtn">
-                                <button type="button" class="button bg-main">
-                                    搜索</button>
-                            </span>
-                    </div>
-                </form>
-            </div>
-            <div class="xs3 xm3 xb2">
-                &nbsp;<div class="button-group">
-                             <button type="button"   class="button dropdown-toggle icon-user">
-                                 <span href="javascript:void(0)" >个人中心</span> <span class="downward"></span>
-                             </button>
-                             <ul class="drop-menu">
-                                 <?php if($userinfo){ ?>
-                                  <li><a style='font-size: 14px;color:black;' href="<?php echo U('Ucenter/index');?>">个人中心</a> </li>
-                                   <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/logout');?>">退出</a> </li>
-                                 <?php }else{ ?>
-                                 <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/register');?>">注册</a> </li>
-                                 <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/login');?>">登录</a> </li>
-                                 <?php } ?>
-                             </ul>
-                     </div> 
-            </div>
         </div>
-    </div>
-</div>
-</div>
-<?php  function nav($nav){ ?>
-<?php foreach($nav as $key=>$item){ ?>  
-<li><a  href="<?php echo U('Article/lists',array('cid'=>$item['id']));?>"><?php echo ($item["name"]); ?>
-        <?php if(is_array($item['sub_item'])&& !empty($item['sub_item'])) { ?>
-        <span class="arrow"></span>
-        <?php } ?>
-    </a> 
-    <?php if(is_array($item['sub_item'])&& !empty($item['sub_item'])) { ?>
-    <ul  <?php if($item['level']==1){ ?>class='drop-menu' <?php } ?>>
-        <?php nav($item['sub_item']); ?>
-</ul>
-<?php } } } ?>
- 
-        <div class="container padding-top">
-            <div class="line-big">
-                <div class="xs9"> 
-                 <ul class="bread">
-    <?php echo ($curpos); ?>
-</ul>
-
-                    <div class="detail">
-                        <div class="border-top padding-top" ></div>
-                        <h1><?php echo trim('12121'); ?>  </h1>
-                        <p class="text-center"> 时间：<?php echo date('Y-m-d H:i','1516075520'); ?> 作者： 来源：sikcms</p>
-                         <div class="border-bottom padding-bottom"></div>
-                        <p> <?php echo trim('<p>234234235345345345345</p>'); ?> </p>
-                    </div>
-                   <div class="comment ">
-                      <div id="comment_form">
-    <input type="hidden" name="pid" value="0"/>
-    <input type="hidden" name="reply_userid" value=""/>
-    <input type="hidden" name="channel_id" value="<?php echo ($info["channel_id"]); ?>"/>
-    <input type="hidden" name="relation_id" value="<?php echo ($info["articles_id"]); ?>"/>
-    <div class="form-group">
-        <div class="field">
-            <textarea class="input" id="comment_body"  placeholder="有种输入评论(^.^)"  name="content" placeholder="" data-validate="required:必填"></textarea>
-        </div>
-    </div>
-    <div class="form-button">
-        <button class="button bg-main" id="post_comment" type="submit">评论</button>
-    </div>
-</div>
-<br>
-<div class="tab" data-toggle="hover">
-    <div class="tab-head">
-        <ul class="tab-nav" style="padding-left: 0px;">
-            <li class="active text-main comment-header "><a href="#tab-start2">评论(<?php echo ($comment_count); ?>)</a></li>
-        </ul>
-    </div>
-    <div class="tab-body tab-body-bordered">
-        <div class="tab-panel active" id="tab-start2"> 
-            <div class="comment-body">
-               <?php if(is_array($comment_list)): $i = 0; $__LIST__ = $comment_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="media media-x  border-bottom border-dashed padding-bottom">
-                    <div class="box-show">
-                        <a class="float-left" href="<?php echo U('User/center',array('id'=>$vo['userid']));?>">
-                            <img src="./statics/home/avator/<?php echo ($vo["user_header"]); ?>" style="width: 40px;"  class="radius" alt="...">
-                        </a>
-                        <a class="float-right" onclick="comment_reply(this)" data-pid="<?php echo ($vo["id"]); ?>" data-userid="<?php echo ($vo["userid"]); ?>" data-nickname="<?php echo ($vo["nickname"]); ?>" href="javascript:void(0)">回复<?php if($vo['reply_nums']>0){ ?>(<?php echo ($vo["reply_nums"]); ?>)<?php } ?></a>
-                    </div>
-                    <div class="media-body">
-                        <strong ><?php echo ($vo["nickname"]); ?> <font class="text-gray text-small"><?php echo (friendlyDate($vo["ctime"])); ?></font></strong><?php echo ($vo["content"]); ?>
-                        <?php if(is_array($vo['reply_list'])): $i = 0; $__LIST__ = $vo['reply_list'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><div class="media media-x ">
-                                <div class="box-show">
-                                    <a class="float-left"  href="<?php echo U('User/center',array('id'=>$item['userid']));?>">
-                                        <img src="./statics/home/avator/<?php echo ($item["user_header"]); ?>" style="width: 40px;" class="radius"  alt="...">
-                                    </a>
-                                    <a class='float-right' data-userid="<?php echo ($item["userid"]); ?>" data-pid="<?php echo ($vo["id"]); ?>" data-nickname="<?php echo ($item["nickname"]); ?>" onclick="comment_reply(this)" href='javascript:void(0)'>回复</a>
-                                </div>
-                                <div class="media-body">
-                                    <strong><?php echo ($item["nickname"]); ?>@<?php echo ($item["reply_username"]); ?> <font class="text-gray text-small"><?php echo (friendlyDate($item["ctime"])); ?></font></strong> <?php echo ($item["content"]); ?>
-                                </div>
-                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </div>
-                </div><?php endforeach; endif; else: echo "" ;endif; ?>   
-            </div>
-            <br>
-             <div class="form-group"  >
-                <form id="moreform" method="post">
-                <input type="hidden" name="page" value="2"/>
-                <input id="comment_more" class="button bg-main button-block" value="加载更多" tabindex="6" type="submit">
-                 </form>
-             </div>         
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript">
-
-    $(document).ready(function () {
-      
-        $("#post_comment").click(function () {
-              var submit = {
-                channel_id: $("input[name='channel_id']").val(),
-                relation_id: $("input[name='relation_id']").val(),
-                reply_userid: $("input[name='reply_userid']").val(),
-                content: $("#comment_body").val(),
-                pid:$("input[name='pid']").val()
-             }
-             if($("#comment_body").val()==''){
-                 $("#comment_body").parent('.field').parent('.form-group').addClass('check-error');
-                 return false;
-             }
-            var url = "<?php echo U('Comment/addComment');?>";
-            $.post(url, submit, function (data) {
-                 if(data.status==1){
-                     alert('评论成功');
-                     window.location.reload();
-                     $("#comment_body").val();
-                 }else{
-                     alert(data.info);
-                 }
-            });
-            return false;
-        });
-        //加载更多
-        $("#comment_more").click(function(){
-            var form=  $("#moreform");
-            var page=$("input[name='page']",form).val();
-            var url="<?php echo U('Comment/ajaxComment');?>"
-            var submit = {
-                 channel_id: $("input[name='channel_id']").val(),
-                 relation_id: $("input[name='relation_id']").val(),
-                 page:page
-            }
-            $.post(url,submit,function(data){
-                if(data.status==1){
-                 $('.comment-body').append(data.info);
-                 $("input[name='page']",form).val(data.url.page);
-                }else{
-                    alert(data.info);
-                }
-            },'json');
-            return false;
-        })
-    });
-    
-
-    function comment_reply(a) {
-        var userid = $(a).attr('data-userid');
-        var nickname = $(a).attr('data-nickname');
-        var pid = $(a).attr('data-pid');
-        var re_tag = "<span>@" + nickname + ":</span>"
-        $("input[name='reply_userid']").val(userid);
-        $("input[name='pid']").val(pid);
-        $("#comment_body").val('@' + nickname + ':').focus();
-    }
-</script>
-
-
-
-                   </div>
+        <div class="leve_right">
+        	<div class="leve_cont">
+            	<div class="cont_title">
+                	<p><?php echo trim('LED植物照明的中国市场前景'); ?></p>
                 </div>
-                <div class="xs3"> 
-                     <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-download text-main doc-h3"> 版本下载</strong>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 基础版</a>
-
-                            </div>
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 完整版</a>
-                            </div>
-                            <div class="form-group">
-                                完整版下载加群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=73acc15173fe0bcf46467e80f2c1ab6e50166f7e59383cb12bcb1b902261bbca">498476759</a>
-                            </div>
-                        </div>
-     </div>
-                    <br>
-                      <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-user text-main doc-h3"> <?php if($userinfo){ ?>欢迎<?php echo ($userinfo['username']); }else{ ?>登录<?php } ?></strong>
-                        </div>
-     <?php if($userinfo){ ?>
-     <div class="panel-body">
-         <div class="form-group">
-              您好:<?php echo ($userinfo['nickname']); ?>              
-           </div>
-         <div class="form-group">
-              目前你是第<?php echo ($userinfo['userid']); ?>位访客 , 当前IP:<?php echo get_client_ip(); ?>                 
-          </div>
-     </div>
-     <?php }else{ ?>
-                        <div class="panel-body">
-                            <form action="<?php echo U('Member/login');?>" method="post">
-                            <div class="form-group">
-                                <input type="text" class="input" placeholder="用户名" name="username"/>
-                            </div>
-                            <div class="form-group">
-                                  <input type="password" class="input" placeholder="密码" name="password"/>
-                            </div>
-                            <div class="form-group">
-                                <button class="button bg-main" id="login" type="submit">登录</button>&nbsp;&nbsp;<a href="<?php echo U('Member/register');?>">没有帐号?去注册</a>
-                            </div>
-                                </form>
-                        </div>
-     <?php } ?>
-     </div>
-                </div> 
-            </div>
-          
-        </div>
-
-        <div class="container doc-footer">
-            <div class="border-top padding-top">
-                <div class="text-center height-big">
-                    版权所有 © sikcms.cn All Rights Reserved，<a href="http://www.pintuer.com" target="_blank">Theme By 拼图</a> &nbsp;赣ICP备：16007200</div>
-
+                <div class="news_read">
+                	<?php echo trim('<p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">植物工厂，通过设施内高精度环境控制实现农作物周年连续生产的高效农业系统，是利用电脑对植物生育的温度、湿度、光照、CO?浓度以及营养液等环境条件进行自动控制，使设施内植物生育不受或很少受自然条件制约的省力型生产。在植物工厂概念诞生之后，植物照明应运而生，那什么是植物照明呢？植物照明主要是扮演与太阳光互补，调节农产品的角色。由于传统植物照明灯的能耗相当大，而随这LED照明技术在各个领域的运用，LED植物照明也被广泛的应用于各植物工厂。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">&nbsp;</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">LED植物照明主要需求的国家包括，易受气候变化影响农产植物在特定时节里短缺问题的大陆型地区，包括中国、美国；以及地狭人绸有机土地较少、或日照较短的地区需求也逐步增加，包括日本、北欧。除此之外，节电的LED照明应用在农业设备上亦已成风潮。而目前中国大陆的LED植物照明产品90%是出口外销。植物工厂在中国应用的时间不是很长，在传统植物照明灯在市场上还没有站稳脚跟的时候LED植物照明灯就强势攻入市场，而中国是世界的农业大国以及在世界LED产业大国，LEDinside认为，未来3年LED植物照明在中国的市场容量将大幅提升：首先，伴随着植物工厂的爆发式增长，LED植物照明的市场也会大的进一步的扩大，而导致植物工厂数量增加的主要原因如下:</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">&nbsp;</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">一、中国城市人口急剧增加，农民数量不断减少，而植物工厂大幅度提高生产能力，在这样的情形下植物工厂将会爆发式增长；二、人们生活品质不断的提升，对反季节蔬菜瓜果的需求量不断的增大，而植物工厂一年四季都可以生产各种蔬菜瓜果；三、温室效应导致自然灾害频繁发生，植物工厂可以在很大程度上减少自然灾害造成的损失。其次，中国是LED产销大国，在LED照明产业上（技术、价格）有着绝佳的优势，促使了LED植物照明在传统植物照明还没有成熟的时候变直接占有主导地位。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">&nbsp;</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: 微软雅黑, &quot;Microsoft Yahei&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 16px;">据了解，目前被常用的两类型的单色光分别是：红光（630—660nm），蓝光（460—470nm）。当前主要技术难题：每一种植物对光的要求是不一样的，很多公司没有这个能力根据植物来应对调节光的波长。很多LED植物照明公司也不知道具体植物所需要的光的波长。LED植物照明制造厂商植物工厂以及植物研究所密切合作，根据植物特性安排匹配的照明光源，促进植物的光合作用。此外尽量生产光谱范围大的光源，或者多种光源组合，智慧调控，满足多种植物同时需求。</span></p><p><br/></p>'); ?>
+                    <p>&nbsp;</p>
+                </div>
             </div>
         </div>
-    </body>
+
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="clearfix"></div>
+<div class="footer2">
+    <div class="footer_down">
+        <div class="w_auto">
+        	<div class="foot_list">
+                <dl>
+                	<dt>关于睿能</dt>
+                                                <dd><a title="公司概况" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=133">公司概况</a></dd>
+                                                    <dd><a title="使命和价值观" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=131">使命和价值观</a></dd>
+                                                    <dd><a title="公司历史" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=130">公司历史</a></dd>
+                                                    <dd><a title="荣誉资质" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=132">荣誉资质</a></dd>
+                                                    <dd><a title="组织机构" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=240">组织机构</a></dd>
+
+                </dl>
+                <dl class="pro_hidden">
+                	<dt>产品中心</dt>
+                                                                            <dd><a title="针织横机电脑控制系统" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=134">针织横机电脑控制系统</a></dd>
+                                                                                                            <dd><a title="伺服驱动器" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=135">伺服驱动器</a></dd>
+                                                                                                            <dd><a title="HID电子镇流器" href="http://www.raynen-lighting.com/lighting.aspx">HID电子镇流器</a></dd>
+
+
+                </dl>
+                <dl>
+                	<dt>新闻中心</dt>
+                                                <dd><a title="公司新闻" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=137">公司新闻</a></dd>
+                                                    <dd><a title="行业新闻" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=139">行业新闻</a></dd>
+                                                    <dd><a title="活动及培训" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=243">活动及培训</a></dd>
+
+                </dl>
+                <dl>
+                	<dt>人力资源</dt>
+                                                <dd><a title="校园招聘" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=255">校园招聘</a></dd>
+                                                    <dd><a title="社会招聘" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=149">社会招聘</a></dd>
+                                                    <dd><a title="薪酬福利" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=235">薪酬福利</a></dd>
+                                                    <dd><a title="员工风采" href="http://www.raynen.cn/index.php?ac=article&at=list&tid=238">员工风采</a></dd>
+
+
+                </dl>
+                <div class="foot_cont">
+                	<p class="fc_title">联系我们</p>
+                    总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区26号<br />
+电话: 0591-88267288<br />
+传真: 0591-88267299<br />
+邮箱: sales@raynen.cn(销售)<br />
+<p style="padding-left:31px">support@raynen.cn(技术支持)</p>
+                </div>
+                <div class="foot_wx">
+                	<p>关注我们</p>
+                    <img src="./statics/home/images/qrcode2.gif">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="foot_share" style="height:33px;">
+            </div>
+            <div class="clearfix"></div>
+            <div class="foot_over">
+                <p>Copyright © 2015 福建睿能科技股份有限公司 版权所有 | 闽ICP备09044485号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35010202000576" style="color:#fff;"><img src="/web_file/images/police.png" style="position:relative;top:4px;"/>闽公网安备 35010202000576号</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>

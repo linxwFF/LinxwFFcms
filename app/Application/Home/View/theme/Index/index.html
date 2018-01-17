@@ -1,35 +1,292 @@
-
 <!DOCTYPE html>
 <html>
-<include file="Public/header"/>
+<include file="Common/header"/>
 <body>
-     <include file="Public/nav"/>
-     <include file="Public/intro"/>
-     <include file="Public/notice"/>
-        <div class="container">
-            <div class="line-big">
-                <div class="xs9 padding-top">
-                    <div class="panel-head bg-white ">
-                    <strong class="icon-archive text-main doc-h3"> 最新文章</strong>
-                    </div>
-                      <ul class="list-text list-underline list-striped">
-                        <cms:article limit="20" order="id desc"   >
-                                 <li><span class="date">[field:inputtime|date('Y-m-d H:i:s',###)]</span><a href="{:U('Article/info',array('id'=>[field:id]))}" class="active">[field:title]</a></li>
-                        </cms:article>
-                        </ul>
-                    <br>
-     <a class="button bg-main button-big" href="{:U('Article/lists')}">更多...</a>
-                </div>
-                <div class="xs3 padding-top">
-                   <include file="Public/download"/>
-                   <br>
-                    <include file="Public/login"/>
+
+<include file="Common/nav"/>
+
+<div class="content">
+
+	<include file="Common/banner"/>
+
+    <div class="banner_02">
+    	<div class="w_auto">
+        	<div class="pro_bann">
+				<div class="block_3">
+                    <a href="{:U('Index/product')}" class="yougofor1"></a>
+                    <a href="{:U('Index/product')}" class="yougofor2"></a>
+                    <a href="{:U('Index/product')}" class="yougofor3"></a>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="banner_03">
+		<div class="w_auto_pro">
+		<div class="pro_bann">
+			<div class="block_4">
+				<a href="{:U('Index/product')}" class="b4gofor1"></a>
+				<a href="{:U('Index/product')}" class="b4gofor2"></a>
+			</div>
+		</div>
+		</div>
+	</div>
 
-<include file="Public/footer"/>
+    <div class="inews">
+    	<div class="n_auto">
+        	<p class="inpro_title2">News</p>
+            <p class="inpro_title3">新闻中心</p>
+            <div class="inews_list">
+            	<ul>
+                    <cms:article limit="6" order="id desc" catid="3" type="h">
+                    <li>
+                        <a title="[field:title]" href="{:U('Article/info',array('id'=>[field:id]))}">
+                            <p class="inews_title">[field:title]</p>
+                            <p>[field:title]</p>
+                            <span>[field:inputtime|date('Y-m-d',###)]</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li>
+                    </cms:article>
+                </ul>
 
-    </body>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_04">
+    	<div class="w_auto">
+        	<div class="map_bg">
+                <div class="indconta1">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="__STATIC__/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta2">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="__STATIC__/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta3">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="__STATIC__/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta4">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="__STATIC__/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta5">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="__STATIC__/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="ind_add">
+            	<div class="add_nav">
+                    <ul>
+                        <li><a class="a2" href="#">福建泉州</a></li>
+                        <li><a href="#">江苏常熟</a></li>
+                        <li><a href="#">江苏横扇</a></li>
+                        <li><a href="#">广东大朗</a></li>
+                        <li><a href="#">浙江桐乡</a></li>
+
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="add_conta">
+                	<div class="add_title">
+                    	<p>泉州睿美</p>
+						<p>自动化</p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:30px 20px 20px 20px">
+							<p class="add_cont_title">泉州睿美自动化科技有限公司</p>
+                            <p>地址：福建省泉州鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+							<p>邮编：362000</p>
+                            <p>电话：0595-28888888</p>
+                            <p>传真：0595-28888888</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>常熟</p>
+						<p>办事处</p>
+                    </div>
+                    <div class="add_read">
+
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">江苏常熟办事处</p>
+                            <p>地址：江苏省常熟市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：215500</p>
+                            <p>电话：18088888888</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>横扇</p>
+						<p>办事处</p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">江苏横扇办事处</p>
+                            <p>地址：江苏省苏州市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：215224</p>
+                            <p>电话：18088888888</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>大朗</p>
+						<p>办事处</p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">广东大朗办事处</p>
+                            <p>地址：广东省东莞市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：523770</p>
+                            <p>电话：18088888888</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>桐乡</p>
+						<p>分公司<p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">浙江桐乡分公司</p>
+                            <p>地址：浙江省桐乡市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：314502</p>
+                            <p>电话：18088888888</p>
+						</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="clearfix"></div>
+
+<include file="Common/footer"/>
+
+</body>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+	$('.add_nav a').hover(function(){
+		var i = $('.add_nav a').index(this);
+		$('.add_nav a').removeClass('a2');
+		$('.add_nav a').eq(i).addClass('a2');
+		$('.ind_add .add_conta').hide();
+		$('.ind_add .add_conta').eq(i).show();
+		$('.banner_04 .map_bg').hide();
+		$('.banner_04 .map_bg').eq(i).show();
+	});
+});
+</script>
 </html>

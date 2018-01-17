@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html>
-<include file="Public/header"/>
+<include file="Common/header"/>
 <body>
-     <include file="Public/nav"/> 
-     
-        <div class="container padding-top">
-            <div class="line-big">
-                <div class="xs9"> 
-                          <include file="Public/curpos"/>
-<!--                    <div class="panel-head bg-white ">
-                    <strong class="icon-archive  doc-h3"> 最新文章</strong>
-                    </div>-->
-                        <ul class="list-text list-underline list-striped">
-                            <sikcms:article  limit="20" order="id desc"   >
-                                 <li><span class="date">[field:inputtime|date('Y-m-d H:i:s',###)]</span><a href="{:U('Article/info',array('id'=>[field:id]))}" class="active">[field:title]</a></li>
-                        </sikcms:article>   
-                           
-                        </ul>
 
-                    <br>
-                    <ul class="pagination">{$page}</ul>
+<include file="Common/nav"/>
 
-<!--            <ul class="pagination">
-                <li><a href="#">«</a> </li>
-                <li><a href="#">1</a> </li>
-                <li><a href="#">2</a> </li>
-                <li><a href="#">3</a> </li>
-                <li><a href="#">4</a> </li>
-                <li><a href="#">5</a> </li>
-                <li><a href="#">»</a> </li>
-            </ul>-->
+<div class="leve">
+    <div class="w_auto">
+        <div class="leve_left">
+            <div class="cont_list">
+            	<ul>
+                	<li><a href="{:U('Index/index')}"><i>首页</i><span></span></a></li>
+                    <li><a class="hover2" title="公司新闻" href="{:U('Article/lists')}"<i>公司新闻</i><span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="leve_right">
+        	<div class="leve_cont">
 
-
-
-
+                <div class="pro_head">
+                	<p>Our News</p>
+                    <span>公司新闻</span>
+                    <div class="nav_page">
+                        <a href="{:U('Index/index')}">首页</a>
+                             &raquo;
+                            <a href="{:U('Article/lists')}">新闻中心</a>
+                             &raquo;
+                            <a href="{:U('Article/lists')}">公司新闻</a>
+                    </div>
                 </div>
-                <div class="xs3"> 
-                      <include file="Public/download"/>
-                </div> 
+                <div class="new_list">
+                	<ul>
+                        <cms:article  limit="20" order="id desc" catid="3">
+                        <li>
+                        	<a href="{:U('Article/info',array('id'=>[field:id]))}">
+                            	<p>[field:title]</p>
+                                <i>[field:title]...</i>
+                            </a>
+                            <span>[field:inputtime|date('Y-m-d',###)]</span>
+                        </li>
+                        </cms:article>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+                 <div class="page">
+                    {$page}
+                 </div>
             </div>
         </div>
 
-      <include file="Public/footer"/>
-    </body>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<include file="Common/footer2"/>
+</body>
 </html>

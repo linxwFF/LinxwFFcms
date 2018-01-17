@@ -42,12 +42,13 @@ class CommonController extends \Think\Controller {
     public function getPage($count, $pagesize, $rewrite = '', $param_url = '') {
         $Page = new \Think\Page($count, $pagesize, '', $param_url);
         $Page->setConfig('header', '');
-        $Page->setConfig('prev', "«");
-        $Page->setConfig('next', "»");
-        $Page->setConfig('first', '首页');
-        $Page->setConfig('last', '末页');
+        $Page->setConfig('prev', '<span class="current disabled">上一页</span>');
+        $Page->setConfig('next', '<span class="current disabled">下一页</span>');
+        $Page->setConfig('first', '<span class="current disabled">首页</span>');
+        $Page->setConfig('last', '<span class="current disabled">尾页</span>');
         $Page->setConfig("%nowPage%/%totalPage% 页 %upPage% %downPage% %first%  %prePage%  %linkPage%  %nextPage% %end% %totalRow%");
         $page = $Page->showPage();
+
         return $page;
     }
 

@@ -9,21 +9,28 @@
     <div class="w_auto">
         <div class="leve_left">
             <div class="cont_list">
-                <ul>
+            	<ul>
                 	<li><a href="{:U('Index/index')}"><i>首页</i><span></span></a></li>
-                    <li><a class="hover2" title="公司新闻" href="{:U('Article/lists')}"<i>公司新闻</i><span></span></a></li>
+               		<li><a class="hover2" title="联系我们" href="{:U('Index/contact')}"><i>联系我们</i><span></span></a></li>
                 </ul>
             </div>
         </div>
         <div class="leve_right">
         	<div class="leve_cont">
-            	<div class="cont_title">
-                	<p><articleinfo name="title" fun="trim('###')" /></p>
+            	<div class="cont_head">
+					<p>Contact Us</p>
+                    <table style="width:100%; border-collapse:collapse;">
+						<tr>
+							<td><span>{$info.title}</span></td>
+							<td style="text-align:right"><span>客服热线：400-100-9999</span></td>
+						</tr>
+					</table>
                 </div>
-                <div class="news_read">
-                	<articleinfo name="content" fun="trim('###')"/>
-                    <p>&nbsp;</p>
+          <div class="contact_read">
+              {$info.content}
+          <div class="clearfix"></div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -31,7 +38,6 @@
     <div class="clearfix"></div>
 </div>
 
-<div class="clearfix"></div>
 <include file="Common/footer2"/>
 </body>
 </html>

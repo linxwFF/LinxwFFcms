@@ -9,21 +9,19 @@
     <div class="w_auto">
         <div class="leve_left">
             <div class="cont_list">
-                <ul>
+            	<ul>
                 	<li><a href="{:U('Index/index')}"><i>首页</i><span></span></a></li>
-                    <li><a class="hover2" title="公司新闻" href="{:U('Article/lists')}"<i>公司新闻</i><span></span></a></li>
+                    <li><a class="hover2" title="公司概况" href="{:U('Index/about')}"<i>公司概况</i><span></span></a></li>
                 </ul>
             </div>
         </div>
         <div class="leve_right">
         	<div class="leve_cont">
-            	<div class="cont_title">
-                	<p><articleinfo name="title" fun="trim('###')" /></p>
+            <div class="cont_head">
+                	<p>Profile</p>
+                    <span>{$info.title}</span>
                 </div>
-                <div class="news_read">
-                	<articleinfo name="content" fun="trim('###')"/>
-                    <p>&nbsp;</p>
-                </div>
+                {$info.content}
             </div>
         </div>
 
@@ -33,5 +31,6 @@
 
 <div class="clearfix"></div>
 <include file="Common/footer2"/>
+</div>
 </body>
 </html>

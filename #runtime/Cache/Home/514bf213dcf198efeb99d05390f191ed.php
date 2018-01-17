@@ -1,171 +1,381 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo strip_tags(C('SYSTEM_NAME'));?>-<?php echo ($title); ?></title>
-        <meta name="description" content="<?php echo strip_tags(C('SYSTEM_NAME'));?>">
-        <script>
-            var _hmt = _hmt || [];
-            (function () {
-                var hm = document.createElement("script");
-                hm.src = "//hm.baidu.com/hm.js?2a0ed9d85eb19c022b5afb2db2389ef8";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-    </head>
-    <script type="text/javascript" src="./statics/home/pintuer/jquery.js?<?php echo C('KLCHOU_BUILD');?>"></script>
-    <script type="text/javascript" src="./statics/home/pintuer/pintuer.js?<?php echo C('KLCHOU_BUILD');?>"></script>
-    <link rel="stylesheet" type="text/css" href="./statics/home/pintuer/pintuer.css?<?php echo C('KLCHOU_BUILD');?>">
-    <link rel="stylesheet" type="text/css" href="./statics/home/css/style.css?<?php echo C('KLCHOU_BUILD');?>">
+<head>
+<meta charset="utf-8">
+<title>睿美科技</title>
+<meta name="keywords" content="睿美科技" />
+<meta name="description" content="睿美科技" />
+<link rel="stylesheet" href="./statics/home/css/style.css" type="text/css">
+<script type="text/javascript" src="./statics/home/js/jquery.js"></script>
+</head>
+
 <body>
-     <!--头部导航-->
-<div class="doc-header">
-<div class="navbar navbar-big bg-white bg-inverse  nav-big ">
-    <div class="line">
-        <div class="xl12 xs2 xm2 xb1">
-            <button class="button icon-navicon float-right" data-target="#header-demo3">
-            </button>
-            <!--<img src=" "/>-->
+
+<div class="head">
+    <div class="w_auto">
+        <div class="logo-cont">
+			<div class="logo"><a href="<?php echo U('Index/index');?>"></a></div>
+			<span class="logo-gp">股票简称: <b>睿美科技</b>&nbsp;&nbsp;&nbsp;股票代码: <b>600000</b></span>
+		</div>
+        <div class="nav" style="padding-top:10px;">
+            <ul id="myHeadMenu">
+       		    <li><a  href="<?php echo U('Index/about');?>">关于我们</a></li>
+	            <li><a  href="<?php echo U('Index/product');?>">产品中心</a></li>
+	            <li><a  href="<?php echo U('Article/lists');?>">新闻中心</a></li>
+	            <li><a  href="<?php echo U('Index/contact');?>">联系我们</a></li>
+            </ul>
         </div>
 
-        <div class=" xl12 xs10 xm10 xb11  padding-top  padding-bottom nav-navicon" >
-            <div class="xs8 xm8 xb6">
-                <ul class="nav nav-menu nav-inline">
-                    <li><a  href="/">首页</a> </li>
-                    <?php nav($nav); ?>
-                    <li><a  href="<?php echo U('Page/zhaop');?>">邀你加入</a> </li>
+    </div>
+	<div class="clearfix"></div>
+</div>
+
+
+<div class="content">
+
+	<div class="banner">
+    <ul id="slider">
+            <li style="background:url(./statics/home/images/banner4.jpg)) no-repeat center top;width:100%;height:574px; overflow:hidden; " >
+            </li>
+                <li style="background:url(./statics/home/images/banner1.jpg) no-repeat center top;width:100%;height:574px; overflow:hidden; display: list-item;">
+            </li>
+                <li style="background:url(./statics/home/images/banner2.jpg) no-repeat center top;width:100%;height:574px; overflow:hidden;">
+            </li>
+                <li style="background:url(./statics/home/images/banner3.jpg) no-repeat center top;width:100%;height:574px; overflow:hidden;">
+            </li>
+    </ul>
+
+    <div class="lr">
+        <a id="left_arrow" class="ban_left"></a>
+        <a id="right_arrow" class="ban_right"></a>
+        <div id="num" class="num">
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./statics/home/js/index.js"></script>
+
+
+    <div class="banner_02">
+    	<div class="w_auto">
+        	<div class="pro_bann">
+				<div class="block_3">
+                    <a href="<?php echo U('Index/product');?>" class="yougofor1"></a>
+                    <a href="<?php echo U('Index/product');?>" class="yougofor2"></a>
+                    <a href="<?php echo U('Index/product');?>" class="yougofor3"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_03">
+		<div class="w_auto_pro">
+		<div class="pro_bann">
+			<div class="block_4">
+				<a href="<?php echo U('Index/product');?>" class="b4gofor1"></a>
+				<a href="<?php echo U('Index/product');?>" class="b4gofor2"></a>
+			</div>
+		</div>
+		</div>
+	</div>
+
+    <div class="inews">
+    	<div class="n_auto">
+        	<p class="inpro_title2">News</p>
+            <p class="inpro_title3">新闻中心</p>
+            <div class="inews_list">
+            	<ul>
+                    <li>
+                        <a title="资讯：城市道路照明光源成陶瓷金卤灯主战场？" href="<?php echo U('Article/info',array('id'=>25));?>">
+                            <p class="inews_title">资讯：城市道路照明光源成陶瓷金卤灯主战场？</p>
+                            <p>资讯：城市道路照明光源成陶瓷金卤灯主战场？</p>
+                            <span>2018-01-17</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li><li>
+                        <a title="中国电子：保发展促融合提能力 确保完成全年目标任务" href="<?php echo U('Article/info',array('id'=>24));?>">
+                            <p class="inews_title">中国电子：保发展促融合提能力 确保完成全年目标任务</p>
+                            <p>中国电子：保发展促融合提能力 确保完成全年目标任务</p>
+                            <span>2018-01-17</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li><li>
+                        <a title="行业聚焦：LED中国九州城惊艳亮相高工LED展" href="<?php echo U('Article/info',array('id'=>23));?>">
+                            <p class="inews_title">行业聚焦：LED中国九州城惊艳亮相高工LED展</p>
+                            <p>行业聚焦：LED中国九州城惊艳亮相高工LED展</p>
+                            <span>2018-01-17</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li><li>
+                        <a title="技能等级认定，理论联系实际" href="<?php echo U('Article/info',array('id'=>22));?>">
+                            <p class="inews_title">技能等级认定，理论联系实际</p>
+                            <p>技能等级认定，理论联系实际</p>
+                            <span>2018-01-17</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li><li>
+                        <a title="行业知识：高强度气体放电灯" href="<?php echo U('Article/info',array('id'=>21));?>">
+                            <p class="inews_title">行业知识：高强度气体放电灯</p>
+                            <p>行业知识：高强度气体放电灯</p>
+                            <span>2018-01-17</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li><li>
+                        <a title="电子镇流器知识" href="<?php echo U('Article/info',array('id'=>20));?>">
+                            <p class="inews_title">电子镇流器知识</p>
+                            <p>电子镇流器知识</p>
+                            <span>2018-01-17</span>
+                            <i class="hot1"></i>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-            <div class="xs4 xm4 xb3">
-                <form>
-                    <div class="input-group padding-little-top">
-                            <input type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
-                            <span class="addbtn">
-                                <button type="button" class="button bg-main">
-                                    搜索</button>
-                            </span>
-                    </div>
-                </form>
-            </div>
-            <div class="xs3 xm3 xb2">
-                &nbsp;<div class="button-group">
-                             <button type="button"   class="button dropdown-toggle icon-user">
-                                 <span href="javascript:void(0)" >个人中心</span> <span class="downward"></span>
-                             </button>
-                             <ul class="drop-menu">
-                                 <?php if($userinfo){ ?>
-                                  <li><a style='font-size: 14px;color:black;' href="<?php echo U('Ucenter/index');?>">个人中心</a> </li>
-                                   <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/logout');?>">退出</a> </li>
-                                 <?php }else{ ?>
-                                 <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/register');?>">注册</a> </li>
-                                 <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/login');?>">登录</a> </li>
-                                 <?php } ?>
-                             </ul>
-                     </div> 
+
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<?php  function nav($nav){ ?>
-<?php foreach($nav as $key=>$item){ ?>  
-<li><a  href="<?php echo U('Article/lists',array('cid'=>$item['id']));?>"><?php echo ($item["name"]); ?>
-        <?php if(is_array($item['sub_item'])&& !empty($item['sub_item'])) { ?>
-        <span class="arrow"></span>
-        <?php } ?>
-    </a> 
-    <?php if(is_array($item['sub_item'])&& !empty($item['sub_item'])) { ?>
-    <ul  <?php if($item['level']==1){ ?>class='drop-menu' <?php } ?>>
-        <?php nav($item['sub_item']); ?>
-</ul>
-<?php } } } ?>
 
-     <div class="bg-main doc-intro">
-            <div class="container">
-    <h1 class="fadein-top">思科CMS内容管理系统</h1>
-    <p class="fadein-bottom">简单实用,可扩展,灵活变动,轻巧</p>
-            </div>
-    </div>
-     <div class="alert alert-red">
-    <span class="close rotate-hover"></span><strong>提示：</strong>2017/01/01开放源码下载。</div>
-</div>
-
-        <div class="container">
-            <div class="line-big">
-                <div class="xs9 padding-top">
-                    <div class="panel-head bg-white ">
-                    <strong class="icon-archive text-main doc-h3"> 最新文章</strong>
+    <div class="banner_04">
+    	<div class="w_auto">
+        	<div class="map_bg">
+                <div class="indconta1">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
                     </div>
-                      <ul class="list-text list-underline list-striped">
-                        <li><span class="date">2018-01-16 12:05:20</span><a href="<?php echo U('Article/info',array('id'=>2));?>" class="active">12121</a></li>
-                        </ul>
-                    <br>
-     <a class="button bg-main button-big" href="<?php echo U('Article/lists');?>">更多...</a>
+                    <div class="cont_wx">
+                        <img src="./statics/home/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
                 </div>
-                <div class="xs3 padding-top">
-                    <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-download text-main doc-h3"> 版本下载</strong>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 基础版</a>
 
-                            </div>
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 完整版</a>
-                            </div>
-                            <div class="form-group">
-                                完整版下载加群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=73acc15173fe0bcf46467e80f2c1ab6e50166f7e59383cb12bcb1b902261bbca">498476759</a>
-                            </div>
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta2">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="./statics/home/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta3">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="./statics/home/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta4">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="./statics/home/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="map_bg" style="display:none">
+                <div class="indconta5">
+                    <p class="inpro_title">Contact Us</p>
+                    <p>联系我们</p>
+                    <div class="conta_us2">
+                        <p class="us_title">福建睿美科技股份有限公司</p>
+                        <br/>
+                        总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                        电话: 0591-88888888<br />
+                        传真: 0591-88888888<br />
+                        邮箱: 88888888@88888888.cn(销售)<br />
+                        <p style="padding-left:35px">88888888@88888888.cn(技术支持)</p>
+                    </div>
+                    <div class="cont_wx">
+                        <img src="./statics/home/images/qrcode.gif">
+                    </div>
+					<div style="padding:20px 0;">
+						<p class="us_title">客服热线：400-100-9999</p>
+					</div>
+                </div>
+
+            </div>
+
+            <div class="ind_add">
+            	<div class="add_nav">
+                    <ul>
+                        <li><a class="a2" href="#">福建泉州</a></li>
+                        <li><a href="#">江苏常熟</a></li>
+                        <li><a href="#">江苏横扇</a></li>
+                        <li><a href="#">广东大朗</a></li>
+                        <li><a href="#">浙江桐乡</a></li>
+
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="add_conta">
+                	<div class="add_title">
+                    	<p>泉州睿美</p>
+						<p>自动化</p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:30px 20px 20px 20px">
+							<p class="add_cont_title">泉州睿美自动化科技有限公司</p>
+                            <p>地址：福建省泉州鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+							<p>邮编：362000</p>
+                            <p>电话：0595-28888888</p>
+                            <p>传真：0595-28888888</p>
                         </div>
-     </div>
-                   <br>
-                     <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-user text-main doc-h3"> <?php if($userinfo){ ?>欢迎<?php echo ($userinfo['username']); }else{ ?>登录<?php } ?></strong>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>常熟</p>
+						<p>办事处</p>
+                    </div>
+                    <div class="add_read">
+
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">江苏常熟办事处</p>
+                            <p>地址：江苏省常熟市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：215500</p>
+                            <p>电话：18088888888</p>
                         </div>
-     <?php if($userinfo){ ?>
-     <div class="panel-body">
-         <div class="form-group">
-              您好:<?php echo ($userinfo['nickname']); ?>              
-           </div>
-         <div class="form-group">
-              目前你是第<?php echo ($userinfo['userid']); ?>位访客 , 当前IP:<?php echo get_client_ip(); ?>                 
-          </div>
-     </div>
-     <?php }else{ ?>
-                        <div class="panel-body">
-                            <form action="<?php echo U('Member/login');?>" method="post">
-                            <div class="form-group">
-                                <input type="text" class="input" placeholder="用户名" name="username"/>
-                            </div>
-                            <div class="form-group">
-                                  <input type="password" class="input" placeholder="密码" name="password"/>
-                            </div>
-                            <div class="form-group">
-                                <button class="button bg-main" id="login" type="submit">登录</button>&nbsp;&nbsp;<a href="<?php echo U('Member/register');?>">没有帐号?去注册</a>
-                            </div>
-                                </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>横扇</p>
+						<p>办事处</p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">江苏横扇办事处</p>
+                            <p>地址：江苏省苏州市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：215224</p>
+                            <p>电话：18088888888</p>
                         </div>
-     <?php } ?>
-     </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>大朗</p>
+						<p>办事处</p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">广东大朗办事处</p>
+                            <p>地址：广东省东莞市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：523770</p>
+                            <p>电话：18088888888</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="add_conta" style="display:none;">
+                	<div class="add_title">
+                    	<p>桐乡</p>
+						<p>分公司<p>
+                    </div>
+                    <div class="add_read">
+                       <div class="cont_tel_1" style="padding:40px 20px 20px 20px">
+                        	<p class="add_cont_title">浙江桐乡分公司</p>
+                            <p>地址：浙江省桐乡市鼓楼区铜盘路软件大道89号软件园C区8888号</p>
+                            <p>邮编：314502</p>
+                            <p>电话：18088888888</p>
+						</div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
 
+<div class="clearfix"></div>
 
-  <div class="container doc-footer">
-            <div class="border-top padding-top">
-                <div class="text-center height-big">
-                    版权所有 © sikcms.cn All Rights Reserved，<a href="http://www.pintuer.com" target="_blank">Theme By 拼图</a> &nbsp;赣ICP备：16007200</div>
-
-            </div>
+<div class="footer" id="divCopyright">
+	<div class="w_auto" style="float:left;margin-left:15%">
+        <div class="foot_end">
+        	<p>Copyright © 2018 福建睿美科技股份有限公司 版权所有 | 闽ICP备013123123123号 | <a target="_blank" href="#" style="color:#fff;"><img src="./statics/home/images/police.png" style="position:relative;top:4px;"/>闽公网安备 闽ICP备013123123123号</a></p>
         </div>
+        <i class="foot_join"><a> &nbsp;</a></i>
+    </div>
+</div>
 
-    </body>
+
+</body>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+	$('.add_nav a').hover(function(){
+		var i = $('.add_nav a').index(this);
+		$('.add_nav a').removeClass('a2');
+		$('.add_nav a').eq(i).addClass('a2');
+		$('.ind_add .add_conta').hide();
+		$('.ind_add .add_conta').eq(i).show();
+		$('.banner_04 .map_bg').hide();
+		$('.banner_04 .map_bg').eq(i).show();
+	});
+});
+</script>
 </html>

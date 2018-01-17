@@ -51,5 +51,8 @@
 
 http://localhost/sikcms/install.php 进入安装
 
+http://127.0.0.1/LinxwFFcms/index.php 前台
+http://127.0.0.1/LinxwFFcms/admin.php 后台  用户名:admin 密码:admin
+
 
 # LinxwFFcms

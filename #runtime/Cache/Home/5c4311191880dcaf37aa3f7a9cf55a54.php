@@ -1,149 +1,206 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo strip_tags(C('SYSTEM_NAME'));?>-<?php echo ($title); ?></title>
-        <meta name="description" content="<?php echo strip_tags(C('SYSTEM_NAME'));?>">
-        <script>
-            var _hmt = _hmt || [];
-            (function () {
-                var hm = document.createElement("script");
-                hm.src = "//hm.baidu.com/hm.js?2a0ed9d85eb19c022b5afb2db2389ef8";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-    </head>
-    <script type="text/javascript" src="./statics/home/pintuer/jquery.js?<?php echo C('KLCHOU_BUILD');?>"></script>
-    <script type="text/javascript" src="./statics/home/pintuer/pintuer.js?<?php echo C('KLCHOU_BUILD');?>"></script>
-    <link rel="stylesheet" type="text/css" href="./statics/home/pintuer/pintuer.css?<?php echo C('KLCHOU_BUILD');?>">
-    <link rel="stylesheet" type="text/css" href="./statics/home/css/style.css?<?php echo C('KLCHOU_BUILD');?>">
+<head>
+<meta charset="utf-8">
+<title>睿美科技</title>
+<meta name="keywords" content="睿美科技" />
+<meta name="description" content="睿美科技" />
+<link rel="stylesheet" href="./statics/home/css/style.css" type="text/css">
+<script type="text/javascript" src="./statics/home/js/jquery.js"></script>
+</head>
+
 <body>
-     <!--头部导航-->
-<div class="doc-header">
-<div class="navbar navbar-big bg-white bg-inverse  nav-big ">
-    <div class="line">
-        <div class="xl12 xs2 xm2 xb1">
-            <button class="button icon-navicon float-right" data-target="#header-demo3">
-            </button>
-            <!--<img src=" "/>-->
+
+<div class="head">
+    <div class="w_auto">
+        <div class="logo-cont">
+			<div class="logo"><a href="<?php echo U('Index/index');?>"></a></div>
+			<span class="logo-gp">股票简称: <b>睿美科技</b>&nbsp;&nbsp;&nbsp;股票代码: <b>600000</b></span>
+		</div>
+        <div class="nav" style="padding-top:10px;">
+            <ul id="myHeadMenu">
+       		    <li><a  href="<?php echo U('Index/about');?>">关于我们</a></li>
+	            <li><a  href="<?php echo U('Index/product');?>">产品中心</a></li>
+	            <li><a  href="<?php echo U('Article/lists');?>">新闻中心</a></li>
+	            <li><a  href="<?php echo U('Index/contact');?>">联系我们</a></li>
+            </ul>
         </div>
 
-        <div class=" xl12 xs10 xm10 xb11  padding-top  padding-bottom nav-navicon" >
-            <div class="xs8 xm8 xb6">
-                <ul class="nav nav-menu nav-inline">
-                    <li><a  href="/">首页</a> </li>
-                    <?php nav($nav); ?>
-                    <li><a  href="<?php echo U('Page/zhaop');?>">邀你加入</a> </li>
+    </div>
+	<div class="clearfix"></div>
+</div>
+
+
+<div class="leve">
+    <div class="w_auto">
+        <div class="leve_left">
+            <div class="cont_list">
+            	<ul>
+                	<li><a href="<?php echo U('Index/index');?>"><i>首页</i><span></span></a></li>
+                    <li><a class="hover2" title="公司新闻" href="<?php echo U('Article/lists');?>"<i>公司新闻</i><span></span></a></li>
                 </ul>
             </div>
-            <div class="xs4 xm4 xb3">
-                <form>
-                    <div class="input-group padding-little-top">
-                            <input type="text" class="input border-main" name="keywords" size="30" placeholder="关键词" />
-                            <span class="addbtn">
-                                <button type="button" class="button bg-main">
-                                    搜索</button>
-                            </span>
+        </div>
+        <div class="leve_right">
+        	<div class="leve_cont">
+
+                <div class="pro_head">
+                	<p>Our News</p>
+                    <span>公司新闻</span>
+                    <div class="nav_page">
+                        <a href="<?php echo U('Index/index');?>">首页</a>
+                             &raquo;
+                            <a href="<?php echo U('Article/lists');?>">新闻中心</a>
+                             &raquo;
+                            <a href="<?php echo U('Article/lists');?>">公司新闻</a>
                     </div>
-                </form>
+                </div>
+                <div class="new_list">
+                	<ul>
+                        <li>
+                        	<a href="<?php echo U('Article/info',array('id'=>25));?>">
+                            	<p>资讯：城市道路照明光源成陶瓷金卤灯主战场？</p>
+                                <i>资讯：城市道路照明光源成陶瓷金卤灯主战场？...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>24));?>">
+                            	<p>中国电子：保发展促融合提能力 确保完成全年目标任务</p>
+                                <i>中国电子：保发展促融合提能力 确保完成全年目标任务...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>23));?>">
+                            	<p>行业聚焦：LED中国九州城惊艳亮相高工LED展</p>
+                                <i>行业聚焦：LED中国九州城惊艳亮相高工LED展...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>22));?>">
+                            	<p>技能等级认定，理论联系实际</p>
+                                <i>技能等级认定，理论联系实际...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>21));?>">
+                            	<p>行业知识：高强度气体放电灯</p>
+                                <i>行业知识：高强度气体放电灯...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>20));?>">
+                            	<p>电子镇流器知识</p>
+                                <i>电子镇流器知识...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>19));?>">
+                            	<p>行业聚焦：智能照明产品成照明行业新锐主流产品</p>
+                                <i>行业聚焦：智能照明产品成照明行业新锐主流产品...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>18));?>">
+                            	<p>行业聚焦：低碳节能大势下 LED灯具将主宰照明市场</p>
+                                <i>行业聚焦：低碳节能大势下 LED灯具将主宰照明市场...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>17));?>">
+                            	<p>行业聚焦：照明史上第一家的争夺战</p>
+                                <i>行业聚焦：照明史上第一家的争夺战...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>16));?>">
+                            	<p>福州市智能制造企业迸发创新活力</p>
+                                <i>福州市智能制造企业迸发创新活力...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>9));?>">
+                            	<p>LED植物照明的中国市场前景</p>
+                                <i>LED植物照明的中国市场前景...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li><li>
+                        	<a href="<?php echo U('Article/info',array('id'=>8));?>">
+                            	<p>早安，新一年</p>
+                                <i>早安，新一年...</i>
+                            </a>
+                            <span>2018-01-17</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+                 <div class="page">
+                    <?php echo ($page); ?>
+                 </div>
             </div>
-            <div class="xs3 xm3 xb2">
-                &nbsp;<div class="button-group">
-                             <button type="button"   class="button dropdown-toggle icon-user">
-                                 <span href="javascript:void(0)" >个人中心</span> <span class="downward"></span>
-                             </button>
-                             <ul class="drop-menu">
-                                 <?php if($userinfo){ ?>
-                                  <li><a style='font-size: 14px;color:black;' href="<?php echo U('Ucenter/index');?>">个人中心</a> </li>
-                                   <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/logout');?>">退出</a> </li>
-                                 <?php }else{ ?>
-                                 <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/register');?>">注册</a> </li>
-                                 <li><a style='font-size: 14px;color:black;' href="<?php echo U('Member/login');?>">登录</a> </li>
-                                 <?php } ?>
-                             </ul>
-                     </div> 
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="footer2">
+    <div class="footer_down">
+        <div class="w_auto">
+        	<div class="foot_list">
+                <dl>
+                	<dt>关于睿能</dt>
+                    <dd><a title="公司概况" href="#">公司概况</a></dd>
+                    <dd><a title="使命和价值观" href="#">使命和价值观</a></dd>
+                    <dd><a title="公司历史" href="#">公司历史</a></dd>
+                    <dd><a title="荣誉资质" href="#">荣誉资质</a></dd>
+                    <dd><a title="组织机构" href="#">组织机构</a></dd>
+                </dl>
+                <dl class="pro_hidden">
+                	<dt>产品中心</dt>
+                    <dd><a title="针织横机电脑控制系统" href="#">针织横机电脑控制系统</a></dd>
+                    <dd><a title="伺服驱动器" href="#">伺服驱动器</a></dd>
+                    <dd><a title="HID电子镇流器" href="#">HID电子镇流器</a></dd>
+                </dl>
+                <dl>
+                	<dt>新闻中心</dt>
+                    <dd><a title="公司新闻" href="#">公司新闻</a></dd>
+                    <dd><a title="行业新闻" href="#">行业新闻</a></dd>
+                    <dd><a title="活动及培训" href="#">活动及培训</a></dd>
+
+                </dl>
+                <dl>
+                	<dt>人力资源</dt>
+                    <dd><a title="校园招聘" href="#">校园招聘</a></dd>
+                    <dd><a title="社会招聘" href="#">社会招聘</a></dd>
+                    <dd><a title="薪酬福利" href="#">薪酬福利</a></dd>
+                    <dd><a title="员工风采" href="#">员工风采</a></dd>
+                </dl>
+                <div class="foot_cont">
+                	<p class="fc_title">联系我们</p>
+                    总部地址: 福建省福州市鼓楼区铜盘路软件大道89号软件园C区8888号<br />
+                    电话: 0591-88888888<br />
+                    传真: 0591-88888888<br />
+                    邮箱: 88888888@88888888.cn(销售)<br />
+                    <p style="padding-left:31px">88888888@88888888.cn(技术支持)</p>
+                </div>
+                <div class="foot_wx">
+                	<p>关注我们</p>
+                    <img src="./statics/home/images/qrcode2.gif">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="foot_share" style="height:33px;">
+            </div>
+            <div class="clearfix"></div>
+            <div class="foot_over">
+                <p>Copyright © 2018 福建睿美科技股份有限公司 版权所有 | 闽ICP备013123123123号 | <a target="_blank" href="#" style="color:#fff;"><img src="./statics/home/images/police.png" style="position:relative;top:4px;"/>闽公网安备 闽ICP备013123123123号</a></p>
             </div>
         </div>
     </div>
+
 </div>
-</div>
-<?php  function nav($nav){ ?>
-<?php foreach($nav as $key=>$item){ ?>  
-<li><a  href="<?php echo U('Article/lists',array('cid'=>$item['id']));?>"><?php echo ($item["name"]); ?>
-        <?php if(is_array($item['sub_item'])&& !empty($item['sub_item'])) { ?>
-        <span class="arrow"></span>
-        <?php } ?>
-    </a> 
-    <?php if(is_array($item['sub_item'])&& !empty($item['sub_item'])) { ?>
-    <ul  <?php if($item['level']==1){ ?>class='drop-menu' <?php } ?>>
-        <?php nav($item['sub_item']); ?>
-</ul>
-<?php } } } ?>
- 
-     
-        <div class="container padding-top">
-            <div class="line-big">
-                <div class="xs9"> 
-                          <ul class="bread">
-    <?php echo ($curpos); ?>
-</ul>
 
-<!--                    <div class="panel-head bg-white ">
-                    <strong class="icon-archive  doc-h3"> 最新文章</strong>
-                    </div>-->
-                        <ul class="list-text list-underline list-striped">
-                            <li><span class="date">2018-01-16 12:05:20</span><a href="<?php echo U('Article/info',array('id'=>2));?>" class="active">12121</a></li>   
-                           
-                        </ul>
-
-                    <br>
-                    <ul class="pagination"><?php echo ($page); ?></ul>
-
-<!--            <ul class="pagination">
-                <li><a href="#">«</a> </li>
-                <li><a href="#">1</a> </li>
-                <li><a href="#">2</a> </li>
-                <li><a href="#">3</a> </li>
-                <li><a href="#">4</a> </li>
-                <li><a href="#">5</a> </li>
-                <li><a href="#">»</a> </li>
-            </ul>-->
-
-
-
-
-                </div>
-                <div class="xs3"> 
-                       <div class='panel'>
-                        <div class="panel-head bg-white ">
-                            <strong class="icon-download text-main doc-h3"> 版本下载</strong>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 基础版</a>
-
-                            </div>
-                            <div class="form-group">
-                                <a class="button bg-main button-big" href="javascript:void(0)">sikcms1.0 完整版</a>
-                            </div>
-                            <div class="form-group">
-                                完整版下载加群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=73acc15173fe0bcf46467e80f2c1ab6e50166f7e59383cb12bcb1b902261bbca">498476759</a>
-                            </div>
-                        </div>
-     </div>
-                </div> 
-            </div>
-        </div>
-
-        <div class="container doc-footer">
-            <div class="border-top padding-top">
-                <div class="text-center height-big">
-                    版权所有 © sikcms.cn All Rights Reserved，<a href="http://www.pintuer.com" target="_blank">Theme By 拼图</a> &nbsp;赣ICP备：16007200</div>
-
-            </div>
-        </div>
-    </body>
+</body>
 </html>
